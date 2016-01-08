@@ -1,0 +1,53 @@
+<%= link_to 'Back', articles_path %>
+
+<%= form_for :article, url: articles_path do |f| %>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <%= f.label :body %><br>
+    <%= f.text_field :body %>
+  </p>
+
+  <p>
+    <%= f.label :takeaway %><br>
+    <%= f.text_field :takeaway %>
+  </p>
+
+  <p>
+    <%= f.label :action %><br>
+    <%= f.text_field :action %>
+  </p>
+
+  <p>
+    <%= f.label :sources %><br>
+    <%= f.text_field :sources %>
+  </p>
+
+  <p>
+    <%= f.label :pictures %><br>
+    <%= f.text_field :pictures %>
+  </p>
+
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<% if @article.errors.any? %>
+  <div id="error_explanation">
+    <h2>
+      <%= pluralize(@article.errors.count, "error") %> prohibited
+      this article from being saved:
+    </h2>
+    <ul>
+      <% @article.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+
+    </ul>
+  </div>
+<% end %>
