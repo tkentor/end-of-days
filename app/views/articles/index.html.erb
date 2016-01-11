@@ -14,11 +14,12 @@
   </tr> -->
 
 
-    <nav class="nav-bar">
-        <a class="navbar" href="#">not the end</a>
-        <a class="navbar-right" href="#">about</a>
-        <a class="navbar-right" href="#">fear</a>
-    </nav>
+    <div class="navbar">
+        <div class="navbar-left"><%= link_to 'not the end', welcome_index_path %></div>
+        <div class="navbar-right"><%= link_to 'about', controller: 'articles' %></div>
+        <div class="navbar-right"><%= link_to 'news', controller: 'articles' %></div>
+        <div class="navbar-right"><%= link_to 'latest', articles_path %></div>
+    </div>
 
   <% @articles.each do |article| %>
     <tr>
@@ -30,6 +31,8 @@
         data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
+
+
 
 
 
