@@ -1,32 +1,35 @@
-<p>
-  <strong>What's your point?</strong>
-  <%= @article.title %>
-</p>
+<div class="article">
 
-<p>
-  <strong>How do you know?</strong>
-  <%= @article.body %>
-</p>
+    <p>
+      <div class="section title"><strong>What's your point?</strong></div>
+      <div class="bodytext title"><%= @article.title %></div>
+    </p>
+    <p>
+      <div class="section body"><strong>How do you know?</strong></div>
+      <div class="bodytext body"><%= @article.body %></div>
+    </p>
 
-<p>
-  <strong>If I only take one thing away...</strong>
-  <%= @article.takeaway %>
-</p>
+    <p>
+      <div class="section takeaway"><strong>If I only take one thing away...</strong></div>
+      <div class="bodytext takeaway"><%= @article.takeaway %></div>
+    </p>
 
-<p>
-  <strong>So what can we do about it?</strong>
-  <%= @article.action %>
-</p>
+    <p>
+      <div class="section action"><strong>So what can we do about it?</strong></div>
+      <div class="bodytext action"><%= @article.action %></div>
+    </p>
 
-<p>
-  <strong>Provvve it!</strong>
-  <%= @article.sources %>
-</p>
+    <p>
+      <div class="section sources"><strong>Provvve it!</strong></div>
+      <div class="bodytext sources"><%= @article.sources %></div>
+    </p>
 
-<p>
-  <strong>Pics or it didn't happen!</strong>
-  <%= @article.pictures %>
-</p>
+    <p>
+      <div class="section pictures"><strong>Pics or it didn't happen!</strong></div>
+      <div class="bodytext pictures"><%= @article.pictures %></div>
+    </p>
+
+</div>
 
 <%= link_to 'Edit', edit_article_path(@article) %> |
 

@@ -1,17 +1,35 @@
 .article{
-  background: white;
-  padding: 0 2% 2% 2%s;
-  margin: 0 7%;
-  border: 5px solid black;
-  border-radius: 25px;
+  background: #eee9e9;
+  padding: 0 2%;
   text-align: justify;
-  font-family: avenir;
+  font-family: "Quicksand";
+  opacity:.8;
+  margin: 0 7%;
+}
+
+.bodytext{
+    font-family: "Quicksand";
 }
 
 .section{
   font-family: "Special Elite";
   font-weight: bold;
-  font-size: 20px;
   color: black;
   padding-top: 2%
+}
+
+.title{
+  font-size: 3vw;
+}
+
+.body{
+ font-size: 1.5vw;
+}
+
+.takeaway{
+  font-size: 2.5vw;
+}
+
+.action{
+  font-size: 2vw;
 }

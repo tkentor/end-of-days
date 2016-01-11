@@ -1,14 +1,10 @@
 body {
-  // background: url(http://i.imgur.com/ld2lQvn.png) no-repeat center center fixed;
-  // -webkit-background-size: cover;
-  // -moz-background-size: cover;
-  // -o-background-size: cover;
-  // background-size: cover;
-  background: #fafafa;
-}
-
-.homepage{
-
+  background: url(http://i.imgur.com/lDznMxt.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  // background: #fafafa;
 }
 
 .name {
@@ -28,7 +24,7 @@ body {
 .carrot {
   font-family: "Special Elite";
   text-transform: lowercase;
-  color: #7D7D7D;
+  color: black;
   text-shadow: none;
 }
 
@@ -36,7 +32,7 @@ body {
   margin: 7% 25% 0 43%;
   font-size: 4.8vw;
   font-family: "Special Elite";
-  color: #7D7D7D;
+  color: black;
   text-shadow: none;
   line-height: 30%;
   font-weight:bold;
@@ -76,7 +72,7 @@ body {
 }
 
 a{
-  color: white;
+  color: black;
   text-decoration: none;
 }
 

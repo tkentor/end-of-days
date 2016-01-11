@@ -5,8 +5,6 @@
   <head>
     <meta charset="utf-8">
     <title>It's Not the End of Days</title>
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Quicksand">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Special+Elite">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
@@ -18,14 +16,14 @@
 <div class="heads">
   <img src="http://i.imgur.com/Jhec3xw.png" alt="latest">
   <img src="http://i.imgur.com/ihDXEqz.png" alt="news">
-  <img src="http://i.imgur.com/vYjnkUg.png" alt="about">
-  <span class="home-links">latest</span><span class="home-links">news</span><span class="home-links">about</span>
+  <img src="http://i.imgur.com/vAYWjOl.png" alt="about">
+  <span class="home-links"><%= link_to 'latest', controller: 'articles' %></span><span class="home-links">news</span><span class="home-links">about</span>
 </div>
 
 
 
 
-    <%= link_to 'My Blog', controller: 'articles' %>
+
 
   </body>
 
