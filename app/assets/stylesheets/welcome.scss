@@ -8,7 +8,7 @@ body {
 }
 
 .homepage{
-  margin: 7% 25%
+
 }
 
 .name {
@@ -22,6 +22,7 @@ body {
   text-shadow: -2px 0px 2px #FFFFFF, -3px 0px 30px #0052A5, -2.5px 0px 70px #E0162B, -4px 1px 2px #FFFFFF, -6px 1px 30px #0052A5, -5px 1px 70px #E0162B, -6px 2px 2px #FFFFFF, -9px 2px 30px #0052A5, -7.5px 2px 70px #E0162B, -8px 3px 2px #FFFFFF, -12px 3px 30px #0052A5, -10px 3px 70px #E0162B, -10px 4px 2px #FFFFFF, -15px 4px 30px #0052A5, -12.5px 4px 70px #E0162B, -12px 5px 2px #FFFFFF, -18px 5px 30px #0052A5, -15px 5px 70px #E0162B, -14px 6px 2px #FFFFFF, -21px 6px 30px #0052A5, -17.5px 6px 70px #E0162B, -16px 7px 2px #FFFFFF, -24px 7px 30px #0052A5, -20px 7px 70px #E0162B, -18px 8px 2px #FFFFFF, -27px 8px 30px #0052A5, -22.5px 8px 70px #E0162B, -20px 9px 2px #FFFFFF, -30px 9px 30px #0052A5, -25px 9px 70px #E0162B, -22px 10px 2px #FFFFFF, -33px 10px 30px #0052A5, -27.5px 10px 70px #E0162B;
   line-spacing: 20%;
   padding: 0 3vw 0 0;
+  margin: 0 25% 5% 25%;
 }
 
 .carrot {
@@ -32,7 +33,7 @@ body {
 }
 
 .not {
-  margin: 7% 15% 0 38%;
+  margin: 7% 25% 0 43%;
   font-size: 4.8vw;
   font-family: "Special Elite";
   color: #7D7D7D;
@@ -89,7 +90,9 @@ a{
   font-family: "Special Elite";
 }
 
-span{
+.home-links{
   text-align: center;
-  margin: 12%;
+  margin: 10%;
+  font-weight: bold;
+  font-size: 3vw;
 }
