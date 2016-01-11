@@ -4,7 +4,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  // background: #fafafa;
+  padding: 70px;
 }
 
 .name {
@@ -29,7 +29,7 @@ body {
 }
 
 .not {
-  margin: 7% 25% 0 43%;
+  margin: 0% 25% 0 42%;
   font-size: 4.8vw;
   font-family: "Special Elite";
   color: black;
@@ -37,20 +37,6 @@ body {
   line-height: 30%;
   font-weight:bold;
   padding: 4vw 0 0 0;
-}
-
-
-.header-cont {
-    width:100%;
-    position:fixed;
-    top:0px;
-}
-.header {
-    height:50px;
-    background:#F0F0F0;
-    border:1px solid #CCC;
-    width:960px;
-    margin:0px auto;
 }
 
 .navbar {
@@ -71,7 +57,7 @@ body {
   text-decoration: none;
 }
 
-.navbar-right{
+.navbar-right a{
   float: right;
   width: 90px;
 }
@@ -84,6 +70,7 @@ body {
   color: black;
   text-decoration: none;
 }
+
 
 
 

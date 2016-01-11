@@ -14,12 +14,7 @@
   </tr> -->
 
 
-    <div class="navbar">
-        <div class="navbar-left"><%= link_to 'not the end', welcome_index_path %></div>
-        <div class="navbar-right"><%= link_to 'about', controller: 'articles' %></div>
-        <div class="navbar-right"><%= link_to 'news', controller: 'articles' %></div>
-        <div class="navbar-right"><%= link_to 'latest', articles_path %></div>
-    </div>
+
 
   <% @articles.each do |article| %>
     <tr>
