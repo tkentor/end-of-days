@@ -9,14 +9,14 @@
   </head>
   <body>
 
-
+  <p><div class="subtext">a little reason to cure our country's fear –<br><span class="a-blog">a politics & news blog</span></div><br>
 
   <div class="homepage">
     <div class="not">not</div>
-    <div class="name">it's<span class="carrot">^</span> the end of days</div></div>
-  </div>
+    <div class="name">it's<span class="carrot">^</span> the<br>end of<br>days.</div></div>
+  </div><br>
 
-<div class="heads">
+<div class="heads"></p>
   <img src="http://i.imgur.com/Jhec3xw.png" alt="blog">
   <img src="http://i.imgur.com/ihDXEqz.png" alt="news">
   <img src="http://i.imgur.com/lQq7djp.png" alt="about">
@@ -24,7 +24,12 @@
 </div>
 
 
-
+<% if current_user %>
+  <div class="admin"><%= link_to 'signup', destroy_user_session_path, :method => :delete %></div>
+<% else %>
+  <div class="admin"><%= link_to 'Signup', new_user_registration_path %></div>
+  <div class="admin"><%= link_to 'admin', new_user_session_path %></div>
+<% end %>
 
 
 
