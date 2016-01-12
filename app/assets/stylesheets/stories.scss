@@ -1,3 +1,12 @@
 // Place all the styles related to the stories controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.story-headline a{
+  color: #00688B;
+  font-size: 3vw;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}

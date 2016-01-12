@@ -1,28 +1,20 @@
-
-<h1>Listing articles</h1>
-
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Link</th>
-    <th>Excerpt</th>
-    <th colspan="3"></th>
-  </tr>
+<% @stories.each do |story| %> <div class="article">
 
 
-<%= link_to 'My Blog', controller: 'stories' %>
-<%= link_to 'New story', new_story_path %>
+<p>
+  <div class="story-headline"><a href="<%= story.link %>"><%= story.title %></a></div>
+</p>
+<p>
+  <div class="bodytext body"><%= story.excerpt %></div>
+</p>
 
-<% @stories.each do |story| %>
-  <tr>
-    <td><%= story.title %></td>
-    <td><%= story.link %></td>
-    <td><%= story.excerpt %></td>
-    <td><%= link_to 'Show', story_path(story) %></td>
-    <td><%= link_to 'Edit', edit_story_path(story) %></td>
-    <td><%= link_to 'Destroy', story_path(story),
+    <div class="admin"><%= link_to 'Edit', edit_story_path(story) %></div>
+    <div class="admin">  <%= link_to 'Destroy', story_path(story),
         method: :delete,
-        data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+        data: { confirm: 'Are you sure?' } %></div>
+
+</div>
 <% end %>
-</table>
+
+
+<div class="admin"><%= link_to 'New story', new_story_path %></div>

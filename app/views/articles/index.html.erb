@@ -1,18 +1,5 @@
+<% @articles.each do |article| %>  <div class="article">
 
-
-<table>
-
-
-
-
-
-
-
-
-
-
-
-  <% @articles.each do |article| %>  <div class="article">
       <p>
         <div class="section title"><strong>What's your point?</strong></div>
         <div class="bodytext title"><%= article.title %></div>
@@ -39,7 +26,7 @@
       </p>
 
 
-
+          
       <div class="admin"><%= link_to 'Edit', edit_article_path(article) %></div>
       <div class="admin"><%= link_to 'Destroy', article_path(article),
         method: :delete,
@@ -50,4 +37,4 @@
 
 
 
-<%= link_to 'New article', new_article_path %>
+<div class="admin"><%= link_to 'New article', new_article_path %></div>
