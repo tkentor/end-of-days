@@ -4,6 +4,7 @@ class ArticlesController < ApplicationController
 
   def index
     @articles = Article.all
+    @articles = Article.order('created_at DESC')
   end
 
   def show
@@ -51,7 +52,7 @@ private
   end
 
   def article_params
-    params.require(:article).permit(:title, :body, :takeaway, :action, :sources, :pictures)
+    params.require(:article).permit(:title, :body, :takeaway, :action, :sources, :pictures, :timestamps)
   end
 
 end

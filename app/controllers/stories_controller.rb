@@ -4,6 +4,7 @@ class StoriesController < ApplicationController
 
   def index
     @stories = Story.all
+    @stories = Story.order('created_at DESC')
   end
 
   def show
@@ -51,7 +52,7 @@ class StoriesController < ApplicationController
   end
 
   def story_params
-    params.require(:story).permit(:title, :link, :excerpt)
+    params.require(:story).permit(:title, :link, :excerpt, :timestamps)
   end
 
 end

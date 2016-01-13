@@ -1,43 +1,45 @@
 <% @articles.each do |article| %>
-  <div class="article" id="<%= "article#{article.id}" %>">
+<div class="article" id="<%= "article#{article.id}" %>">
+  <p>
+    <div class="section body">
+      <div class="bodytext time"><%= article.created_at.strftime("%B %d, %Y") %></div>
+      <div class="click">[click to expand]</div><br>
+      <div class="expand"><strong>What's your point?</strong></div></div>
+      <div class="bodytext title"><%= article.title %></div>
+    </p>
+    <div class="expand">
       <p>
-        <div class="section body">
-        <div class="click">[click to expand]</div><br>
-        <div class="expand"><strong>What's your point?</strong></div></div>
-        <div class="bodytext title"><%= article.title %></div>
+        <div class="section body"><strong>How do you know?</strong></div>
+        <div class="bodytext body"><%= article.body %></div>
       </p>
-      <div class="expand">
-        <p>
-          <div class="section body"><strong>How do you know?</strong></div>
-          <div class="bodytext body"><%= article.body %></div>
-        </p>
-      </div>
-        <p>
-          <div class="section takeaway"><strong>If I only take one thing away...</strong></div>
-          <div class="bodytext takeaway"><%= article.takeaway %></div>
-        </p>
-      <div class="expand">
-        <p>
-          <div class="section action"><strong>So what can we do about it?</strong></div>
-          <div class="bodytext action"><%= article.action %></div>
-        </p>
-        <p>
-          <div class="section sources"><strong>Provvve it!</strong></div>
-          <div class="bodytext sources"><%= article.sources %></div>
-        </p>
-        <p>
-          <div class="section pictures"><strong>Pics or it didn't happen!</strong></div>
-          <div class="bodytext pictures"><%= article.pictures %></div>
-        </p>
-      </div>
+    </div>
+    <p>
+      <div class="section takeaway"><strong>If I only take one thing away...</strong></div>
+      <div class="bodytext takeaway"><%= article.takeaway %></div>
+    </p>
+    <div class="expand">
+      <p>
+        <div class="section action"><strong>So what can we do about it?</strong></div>
+        <div class="bodytext action"><%= article.action %></div>
+      </p>
+      <p>
+        <div class="section sources"><strong>Provvve it!</strong></div>
+        <div class="bodytext sources"><%= article.sources %></div>
+      </p>
+      <p>
+        <div class="section pictures"><strong>Pics or it didn't happen!</strong></div>
+        <div class="bodytext pictures"><%= article.pictures %></div>
+      </p>
 
-      <div class="admin"><%= link_to 'edit', edit_article_path(article) %> | </div>
-        <div class="admin">
-          <%= link_to 'delete', article_path(article),
-                  method: :delete,
-                  data: { confirm: 'Are you sure?' } %>
-        </div>
+    </div>
+
+    <div class="admin"><%= link_to 'edit', edit_article_path(article) %> | </div>
+    <div class="admin">
+      <%= link_to 'delete', article_path(article),
+      method: :delete,
+      data: { confirm: 'Are you sure?' } %>
+    </div>
   </div>
-<% end %>
+  <% end %>
 
-<div class="admin"><%= link_to 'new', new_article_path %></div>
+  <div class="admin"><%= link_to 'new', new_article_path %></div>

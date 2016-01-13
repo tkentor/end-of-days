@@ -7,8 +7,7 @@ class CreateArticles < ActiveRecord::Migration
       t.string :action
       t.string :sources
       t.string :pictures
-
-      t.timestamps null: false
+      t.timestamps
     end
   end
 end

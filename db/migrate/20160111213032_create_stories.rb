@@ -4,8 +4,7 @@ class CreateStories < ActiveRecord::Migration
       t.text :title
       t.string :link
       t.text :excerpt
-
-      t.timestamps null: false
+      t.timestamps
     end
   end
 end
