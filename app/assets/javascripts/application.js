@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .
 
 $(document).ready(function(){
@@ -22,12 +21,5 @@ $(document).ready(function(){
       $(this).find(".expand").toggle();
       $(this).find(".click").toggle();
     })
-
-
-
-  // $(".article").click(function(){
-  //     $(".expand").toggle();
-  //     $(".click").toggle();
-  // });
 
 });
