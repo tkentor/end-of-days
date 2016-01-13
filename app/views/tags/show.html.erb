@@ -38,4 +38,24 @@
     </div>
   </div>
 
+  <% @stories.each do |story| %> <div class="article">
+
+    <br><div class="story-time"><%= story.created_at.strftime("%B %d, %Y") %></div>
+
+    <p>
+      <div class="story-headline"><a href="<%= story.link %>"><%= story.title %></a></div>
+    </p>
+    <p>
+      <div class="bodytext body"><%= story.excerpt %></div>
+    </p>
+    <p>
+      <div class="section pictures"><strong>Tags</strong></div>
+      <div class="bodytext sources"><% story.tags.each do |tag| %><%= link_to tag.name, tag %>, <% end %></div>
+    </p>
+
+
+
+
+  </div>
+    <% end %>
     <% end %>
