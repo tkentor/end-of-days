@@ -1,7 +1,6 @@
 .article{
   background: rgba(255,255,255,.8);
   padding: .5% 2% 1% 2%;
-  text-align: justify;
   font-family: "Quicksand";
   margin: 6% 7% 6% 7%;
   box-shadow: 0px 0px 20px rgba(0,0,0,.5);
@@ -13,9 +12,7 @@
 
 .section{
   font-family: "Special Elite";
-  font-weight: bold;
   color: black;
-  padding-top: 2%
 }
 
 .title{
@@ -30,9 +27,13 @@
 }
 
 .takeaway{
-  font-size: 2vw;
+  font-size: 1.8vw;
 }
 
 .action{
   font-size: 1.8vw;
+}
+
+.expand{
+  display: none;
 }

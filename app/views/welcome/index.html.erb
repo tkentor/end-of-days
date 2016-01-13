@@ -17,8 +17,13 @@
   </div><br>
 
 <div class="heads"></p>
-  <img src="http://i.imgur.com/Jhec3xw.png" alt="blog">
-  <img src="http://i.imgur.com/ihDXEqz.png" alt="news">
+  <!-- <img src="http://i.imgur.com/Jhec3xw.png" alt="blog"> -->
+  <%= link_to articles_path do %>
+    <%= image_tag("http://i.imgur.com/Jhec3xw.png") %>
+  <% end %>
+  <%= link_to stories_path do %>
+    <%= image_tag("http://i.imgur.com/ihDXEqz.png") %>
+  <% end %>
   <img src="http://i.imgur.com/lQq7djp.png" alt="about">
   <span class="home-links"><%= link_to 'blog', controller: 'articles' %></span><span class="home-links"><%= link_to 'news', controller: 'stories' %></span><span class="home-links">about</span>
 </div>

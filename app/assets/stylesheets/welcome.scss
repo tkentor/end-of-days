@@ -104,15 +104,15 @@ body {
 }
 
 .admin a{
-  color: white;
+  color: rgba(white,.1);
   float: right;
-  font: "quicksand";
+  font-family: "quicksand";
 }
 
 .admin{
-  color: white;
+  color: rgba(white,.1);
   float: right;
-  font: "quicksand";
+  font-family: "quicksand";
 }
 
 .error{
@@ -120,4 +120,9 @@ body {
   font-size: 5vw;
   font-family: "quicksand";
   font-weight: bold;
+}
+
+.click{
+  float: right;
+  color: #00688B;
 }
