@@ -12,8 +12,8 @@
   <%= link_to stories_path do %>
     <%= image_tag("http://i.imgur.com/ihDXEqz.png") %>
   <% end %>
-  <img src="http://i.imgur.com/lQq7djp.png" alt="about">
-  <span class="home-links"><%= link_to 'blog', controller: 'articles' %></span><span class="home-links"><%= link_to 'news', controller: 'stories' %></span><span class="home-links">about</span>
+  <a href='/about'><img src="http://i.imgur.com/lQq7djp.png"></a>
+  <span class="home-links"><%= link_to 'blog', controller: 'articles' %></span><span class="home-links"><%= link_to 'news', controller: 'stories' %></span><span class="home-links"><a href='/about'>about</a></span>
 </div>
 
 

@@ -133,3 +133,23 @@ body {
   font-size: 5vw;
   padding-top: 2vw;
 }
+
+.tag a{
+  color: #00688B;
+  font-family: "Special Elite";
+  text-decoration: none;
+  font-weight:bold;
+}
+
+.tag{
+  color: #00688B;
+  font-family: "Special Elite";
+  text-decoration: none;
+  font-weight:bold;
+  background-color: rgba(0,104,139,.2);
+  padding: .5%;
+}
+
+.all-tags{
+  text-align: right;
+}
