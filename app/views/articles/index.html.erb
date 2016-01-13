@@ -27,11 +27,11 @@
         <div class="bodytext sources"><%= article.sources %></div>
       </p>
       <p>
-        <div class="section pictures"><strong>Pics or it didn't happen!</strong></div>
-        <div class="bodytext pictures"><%= article.pictures %></div>
+        <div class="section pictures"><strong>Tags</strong></div>
+        <div class="bodytext sources"><% article.tags.each do |tag| %><%= tag.name %>, <% end %></div>
       </p>
 
-      Tags: <%= raw article.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %>
+
 
     </div>
 
@@ -42,6 +42,7 @@
       data: { confirm: 'Are you sure?' } %>
     </div>
   </div>
-  <% end %>
+
+ <% end %>
 
   <div class="admin"><%= link_to 'new', new_article_path %></div>

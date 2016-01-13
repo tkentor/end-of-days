@@ -2,7 +2,7 @@ class Story < ActiveRecord::Base
   validates :title, presence: true
   validates :link, presence: true
 
-  attr_accessible :content, :name, :tag_list
+  # attr_accessible :content, :name, :tag_list
   has_many :taggings
   has_many :tags, through: :taggings
 

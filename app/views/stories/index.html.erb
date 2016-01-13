@@ -8,9 +8,13 @@
   <p>
     <div class="bodytext body"><%= story.excerpt %></div>
   </p>
+  <p>
+    <div class="section pictures"><strong>Tags</strong></div>
+    <div class="bodytext sources"><% story.tags.each do |tag| %><%= tag.name %>, <% end %></div>
+  </p>
 
 
-  
+
   <div class="admin"><%= link_to 'edit', edit_story_path(story) %> | </div>
   <div class="admin">
     <%= link_to 'delete', story_path(story),
