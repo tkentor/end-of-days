@@ -41,7 +41,7 @@ class Article < ActiveRecord::Base
   end
 
   def picture_list=(links)
-    self.pictures = links.split(",").map do |n|
+    self.pictures = links.map do |n|
       Picture.where(link: n.strip).first_or_create!
     end
   end
