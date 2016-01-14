@@ -40,9 +40,15 @@
 
 .time{
   color: #CD3700;
+  position: relative;
 }
 
 .time-right{
   color: #CD3700;
   text-align: right;
+}
+
+.tag-picture img{
+  float: right;
+  width: 60px;
 }
