@@ -1,0 +1,30 @@
+.war{
+  margin-top: 7%;
+  font-family: "Special Elite";
+  font-size: 4.5vw;
+  text-align: center;
+  padding: 4% 2% 3% 5%;
+  margin: 3% 10% 0 10%;
+  font-weight: bolder;
+}
+
+.war2{
+  font-family: "Special Elite";
+  font-size: 5vw;
+}
+
+.about-text{
+  font-family: "quicksand";
+  font-size: 2vw;
+  text-align: justify;
+  margin: 0 10%;
+  background: rgba(255,255,255,.8);
+  padding: 2% 5%;
+  box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+}
+
+.bold{
+  font-family: "Special Elite";
+  font-weight: bolder;
+  color: rgb(153,0,18);
+}
