@@ -26,20 +26,19 @@
         <div class="section sources"><strong>Provvve it!</strong></div>
         <div class="bodytext sources"><%= article.sources %></div>
       </p>
+      <p>
+        <div class="all-tags"><% article.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %></div>    </div>
+        <div class="tag-picture"><% article.pictures.each do |picture| %><%= image_tag "#{picture.link}" %><% end %></div>
+      </p>
+
+      <div class="admin"><%= link_to 'edit', edit_article_path(article) %> | </div>
+      <div class="admin">
+        <%= link_to 'delete', article_path(article),
+        method: :delete,
+        data: { confirm: 'Are you sure?' } %>
+      </div>
     </div>
-    <p>
-    <div class="all-tags"><% article.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %></div>
-    <div class="tag-picture"><% article.pictures.each do |picture| %><%= image_tag "#{picture.link}" %><% end %></div>
-  </p>
 
-  <div class="admin"><%= link_to 'edit', edit_article_path(article) %> | </div>
-  <div class="admin">
-    <%= link_to 'delete', article_path(article),
-    method: :delete,
-    data: { confirm: 'Are you sure?' } %>
-  </div>
-</div>
+    <% end %>
 
-<% end %>
-
-<div class="admin"><%= link_to 'new', new_article_path %></div>
+    <div class="admin"><%= link_to 'new', new_article_path %></div>

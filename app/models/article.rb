@@ -2,10 +2,10 @@ class Article < ActiveRecord::Base
   validates :title, presence: true
   validates :takeaway, presence: true
   validates :action, presence: true
-  has_many :taggings
-  has_many :tags, through: :taggings
-  has_many :depictions
-  has_many :pictures, through: :depictions
+  has_many :taggings, :dependent => :delete_all
+  has_many :tags, through: :taggings, :dependent => :delete_all
+  has_many :depictions, :dependent => :delete_all
+  has_many :pictures, through: :depictions, :dependent => :delete_all
 
   def self.tagged_with(name)
     Tag.find_by_name!(name).articles
