@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :articles
   resources :stories
   resources :tags, only: [:show]
+  resources :pictures, only: [:show]
   devise_for :users
 
   # The priority is based upon order of creation: first created -> highest priority.

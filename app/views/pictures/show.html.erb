@@ -1,4 +1,4 @@
-<div class="tags"><%= @picture.link %></div>
+<div class="picture-page"><%= image_tag @picture.link %></div>
 
 <% @articles.each do |article| %>
 <div class="article" id="<%= "article#{article.id}" %>">
@@ -29,7 +29,7 @@
         <div class="bodytext sources"><%= article.sources %></div>
       </p>
       <p>
-        <div class="all-tags"><% article.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %></div>
+        <div class="all-tags"><% article.pictures.each do |picture| %><span class="tag"><%= link_to picture.link, picture %></span> &nbsp &nbsp<% end %></div>
       </p>
 
 
