@@ -6,7 +6,6 @@ class CreateArticles < ActiveRecord::Migration
       t.string :takeaway
       t.string :action
       t.string :sources
-      t.string :pictures
       t.timestamps
     end
   end
