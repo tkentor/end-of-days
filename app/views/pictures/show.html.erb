@@ -1,9 +1,11 @@
+<div class="tags"><%= @picture.link %></div>
+
 <% @articles.each do |article| %>
 <div class="article" id="<%= "article#{article.id}" %>">
   <p>
     <div class="section body">
-      <div class="click">[click to expand]</div>
       <div class="bodytext time"><%= article.created_at.strftime("%B %d, %Y") %></div>
+      <div class="click">[click to expand]</div><br>
       <div class="expand"><strong>What's your point?</strong></div></div>
       <div class="bodytext title"><%= article.title %></div>
     </p>
@@ -27,18 +29,33 @@
         <div class="bodytext sources"><%= article.sources %></div>
       </p>
       <p>
-        <div class="all-tags"><% article.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %></div>    </div>
-        <div class="tag-picture"><% article.pictures.each do |picture| %><%= link_to image_tag "#{picture.link}", picture %><% end %></div>
+        <div class="all-tags"><% article.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %></div>
       </p>
 
-      <div class="admin"><%= link_to 'edit', edit_article_path(article) %> | </div>
-      <div class="admin">
-        <%= link_to 'delete', article_path(article),
-        method: :delete,
-        data: { confirm: 'Are you sure?' } %>
-      </div>
+
+
+
+
     </div>
+  </div>
 
+  <% @stories.each do |story| %> <div class="article">
+
+    <br><div class="story-time"><%= story.created_at.strftime("%B %d, %Y") %></div>
+
+    <p>
+      <div class="story-headline"><a href="<%= story.link %>"><%= story.title %></a></div>
+    </p>
+    <p>
+      <div class="bodytext body"><%= story.excerpt %></div>
+    </p>
+    <p>
+        <div class="all-tags"><% story.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %></div>
+    </p>
+
+
+
+
+  </div>
     <% end %>
-
-    <div class="admin"><%= link_to 'new', new_article_path %></div>
+    <% end %>

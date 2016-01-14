@@ -33,3 +33,13 @@
   font-family: "Special Elite";
   font-weight: bolder;
 }
+
+.disclaimer{
+  font-style: italic;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+.underline{
+  background: rgba(96,96,96,.5);
+}

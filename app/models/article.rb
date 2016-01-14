@@ -1,7 +1,7 @@
 class Article < ActiveRecord::Base
-  validates :title, presence: true
-  validates :takeaway, presence: true
-  validates :action, presence: true
+  # validates :title, presence: true
+  # validates :takeaway, presence: true
+  # validates :action, presence: true
   has_many :taggings, :dependent => :delete_all
   has_many :tags, through: :taggings, :dependent => :delete_all
   has_many :depictions, :dependent => :delete_all

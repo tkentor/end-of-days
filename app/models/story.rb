@@ -1,6 +1,6 @@
 class Story < ActiveRecord::Base
-  validates :title, presence: true
-  validates :link, presence: true
+  # validates :title, presence: true
+  # validates :link, presence: true
   has_many :taggings, :dependent => :delete_all
   has_many :tags, through: :taggings, :dependent => :delete_all
   has_many :depictions, :dependent => :delete_all

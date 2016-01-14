@@ -21,4 +21,7 @@ $(document).ready(function(){
       $(this).find(".click").toggle();
       $(this).find(".time").toggleClass("time-right")
     })
+
+  $("img[src='']").remove();
+
 });
