@@ -16,11 +16,19 @@
 <body>
 
   <div class="navbar">
-      <div class="navbar-left"><%= link_to "it's not the end of days", welcome_index_path %></div>
-      <div class="navbar-right"><a href="http://dontbeafarmer.com">&#9733</a></div>
-      <span class="font-effect-neon"><div class="navbar-right"><a href='/about'>about</a></div></span>
-      <div class="navbar-right"><%= link_to 'news', stories_path %></div>
-      <div class="navbar-right"><%= link_to 'blog', articles_path %></div>
+    <div class="navbar-left"><%= link_to "it's not the end of days", welcome_index_path %></div>
+    <div class="navbar-right"><a href="http://dontbeafarmer.com">&#9733</a></div>
+    <span class="font-effect-neon"><div class="navbar-right"><a href='/about'>about</a></div></span>
+    <div class="dropdown">
+      <div class="navbar-right">topics</div>
+      <div class="dropdown-content">
+        <a href="/tags/1">trump</a>
+        <a href="/tags/2">yolo</a>
+        <a href="/tags/3">onfleek</a>
+      </div>
+    </div>
+    <div class="navbar-right"><%= link_to 'news', stories_path %></div>
+    <div class="navbar-right"><%= link_to 'blog', articles_path %></div>
 
   </div>
 
@@ -28,7 +36,7 @@
 
 
 
-<%= yield %>
+  <%= yield %>
 
 </body>
 
