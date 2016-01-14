@@ -41,8 +41,12 @@
 
   <p>
     <%= f.label :tag_list, "Tags (separated by commas)" %><br>
-    <%= f.select :tag_list, [['trump', 'http://i.imgur.com/5v8dM2K.png'],['hillary','http://i.imgur.com/3fPznJm.png'],['stack of cash', 'http://i.imgur.com/sl6agsU.png']] %>
-    <%= f.select :tag_list, [['ben', 'http://i.imgur.com/HuHKHPz.png'],['cruz','http://i.imgur.com/IHHWrFM.png'],['rubio', 'http://i.imgur.com/EyfKSRt.png']] %>
+    <%= f.text_field :tag_list %>
+  </p>
+
+  <p>
+    <%= f.label :"Picture URLs" %><br>
+    <%= f.text_area :pictures %>
   </p>
 
   <p>

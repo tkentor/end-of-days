@@ -27,7 +27,7 @@
         <div class="bodytext sources"><%= article.sources %></div>
       </p>
       </div>
-        <div class="tag-picture"><% article.tags.each do |tag| %><span class="imagesbro"><%= image_tag "#{tag.name}" %></span><% end %></div>
+        <div class="tag-picture"><% article.tags.each do |tag| %><%= image_tag "#{tag.name}" %><% end %></div>
 
 
 
