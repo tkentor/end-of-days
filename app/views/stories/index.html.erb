@@ -11,7 +11,7 @@
   <p>
 
     <div class="all-tags"><% story.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %></div>
-    <div class="tag-picture"><% story.pictures.each do |picture| %><%= image_tag "#{picture.link}" %><% end %></div>
+    <div class="tag-picture"><% story.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %></div>
 
   </p>
 
