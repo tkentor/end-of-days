@@ -33,8 +33,8 @@
     <%= f.text_field :tag_list %>
   </p>
   <p>
-    <%= f.label :picture_list, "Picture URLs (separated by commas)" %><br>
-    <%= f.text_field :picture_list %>
+    <%= f.label :picture_list, "pictures" %>
+    <%= f.select :picture_list, [['mindfulness', 'http://i.imgur.com/k4MwmCr.gif'],['languages','http://i.imgur.com/u2K1SPg.gif'],['books', 'http://i.imgur.com/s08ysrL.gif'],['travel', 'http://i.imgur.com/hGPFD48.gif']],{ :prompt => "Please select"},{ :multiple => true } %>
   </p>
 
   <p>

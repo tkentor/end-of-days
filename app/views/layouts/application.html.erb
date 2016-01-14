@@ -4,6 +4,9 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Quicksand">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Special+Elite">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+  <link rel='stylesheet' type='text/css' href="http://fonts.googleapis.com/css?family=Rancho&effect=fire">
+  <link rel='stylesheet' type='text/css' href="http://fonts.googleapis.com/css?family=Rancho&effect=fire-animation">
+  <link rel='stylesheet' type='text/css' href="http://fonts.googleapis.com/css?family=Rancho&effect=neon">
   <title>EndOfDays</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -15,12 +18,11 @@
   <div class="navbar">
       <div class="navbar-left"><%= link_to "it's not the end of days", welcome_index_path %></div>
       <div class="navbar-right"><a href="http://dontbeafarmer.com">&#9733</a></div>
-      <div class="navbar-right"><a href='/about'>about</a></div>
+      <span class="font-effect-neon"><div class="navbar-right"><a href='/about'>about</a></div></span>
       <div class="navbar-right"><%= link_to 'news', stories_path %></div>
       <div class="navbar-right"><%= link_to 'blog', articles_path %></div>
 
   </div>
-
 
 
 
