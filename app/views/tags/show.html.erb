@@ -29,7 +29,8 @@
         <div class="bodytext sources"><%= article.sources %></div>
       </p>
       <p>
-        <div class="all-tags"><% article.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %></div>
+        <div class="all-tags"><% article.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %></div>    </div>
+        <div class="tag-picture"><% article.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %></div>
       </p>
 
 
@@ -50,9 +51,11 @@
       <div class="bodytext body"><%= story.excerpt %></div>
     </p>
     <p>
-        <div class="all-tags"><% story.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %></div>
-    </p>
 
+      <div class="all-tags"><% story.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %></div>
+      <div class="tag-picture"><% story.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %></div>
+
+    </p>
 
 
 
