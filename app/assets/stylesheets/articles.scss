@@ -5,7 +5,7 @@ $selectFont: "Special Elite";
   background: rgba(255,255,255,.8);
   padding: .5% 2% 1% 2%;
   font-family: $baseFont;
-  margin: 6% 7% 6% 7%;
+  margin: 6% 7% 8% 7%;
   box-shadow: 0px 0px 20px rgba(0,0,0,.5);
 }
 
@@ -50,7 +50,7 @@ $selectFont: "Special Elite";
 
 .tag-picture img{
   float: right;
-  width: 60px;
+  width: 6vw;
 }
 
 .picture-page img{
@@ -84,4 +84,19 @@ $selectFont: "Special Elite";
 .heads img{
   width: 25%;
   padding: 2.5%;
+}
+
+
+@media (max-width: 700px){
+  .tag-picture img{
+    float: right;
+    width: 8vw;
+  }
+  .article {
+    margin-bottom: 18%;
+  }
+}
+
+@media (min-width: 1000px){
+
 }

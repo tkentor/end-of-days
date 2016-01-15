@@ -1,51 +1,51 @@
 <%= form_for @story do |f| %>
 
-  <% if @story.errors.any? %>
-    <div id="error_explanation">
-      <h2>
-        <%= pluralize(@story.errors.count, "error") %> prohibited
-        this article from being saved:
-      </h2>
-      <ul>
-        <% @story.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
+<% if @story.errors.any? %>
+<div id="error_explanation">
+  <h2>
+    <%= pluralize(@story.errors.count, "error") %> prohibited
+    this article from being saved:
+  </h2>
+  <ul>
+    <% @story.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
 
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_area :title %>
-  </p>
+<p>
+  <%= f.label :title %><br>
+  <%= f.text_area :title %>
+</p>
 
-  <p>
-    <%= f.label :link %><br>
-    <%= f.text_field :link %>
-  </p>
+<p>
+  <%= f.label :link %><br>
+  <%= f.text_field :link %>
+</p>
 
-  <p>
-    <%= f.label :excerpt %><br>
-    <%= f.text_area :excerpt %>
-  </p>
-  <p>
-    <%= f.label :tag_list, "Tags (separated by commas)" %><br>
-    <%= f.text_field :tag_list %>
-  </p>
-  <p>
-    <%= f.label :picture_list, "pictures" %>
-    <%= f.select :picture_list, [['trump','
+<p>
+  <%= f.label :excerpt %><br>
+  <%= f.text_area :excerpt %>
+</p>
+<p>
+  <%= f.label :tag_list, "Tags (separated by commas)" %><br>
+  <%= f.text_field :tag_list %>
+</p>
+<p>
+  <%= f.label :picture_list, "pictures" %>
+  <%= f.select :picture_list, [['trump','
     http://i.imgur.com/ZIFXVMh.png'],['rubio','
     http://i.imgur.com/EyfKSRt.png'],['hillary','http://i.imgur.com/3fPznJm.png'
     ],['bernie','http://i.imgur.com/q51jBgb.png'],['cruz','
-    http://i.imgur.com/IHHWrFM.png'],['money','
-    http://i.imgur.com/sl6agsU.png'],['farmer','
-    http://i.imgur.com/jIiAzBG.png']],{:prompt => "Please
-    select"},{ :multiple => true } %>
-  </p>
+      http://i.imgur.com/IHHWrFM.png'],['money','
+      http://i.imgur.com/sl6agsU.png'],['farmer','
+      http://i.imgur.com/jIiAzBG.png']],{:prompt => "Please
+      select"},{ :multiple => true } %>
+    </p>
 
-  <p>
-    <%= f.submit %>
-  </p>
+    <p>
+      <%= f.submit %>
+    </p>
 
-<% end %>
+    <% end %>
