@@ -1,6 +1,9 @@
-.war{
+$baseFont: "Quicksand";
+$selectFont: "Special Elite";
+
+.we-are{
   margin-top: 7%;
-  font-family: "Special Elite";
+  font-family: $selectFont;
   font-size: 4.5vw;
   text-align: center;
   padding: 4% 2% 3% 5%;
@@ -8,13 +11,13 @@
   font-weight: bolder;
 }
 
-.war2{
-  font-family: "Special Elite";
+.war{
+  font-family: $selectFont;
   font-size: 5vw;
 }
 
 .about-text{
-  font-family: "Quicksand";
+  font-family: $baseFont;
   font-size: 2vw;
   text-align: justify;
   margin: 0 10%;
@@ -24,13 +27,13 @@
 }
 
 .bold{
-  font-family: "Special Elite";
+  font-family: $selectFont;
   font-weight: bolder;
   color: rgb(153,0,18);
 }
 
 .boldfire{
-  font-family: "Special Elite";
+  font-family: $selectFont;
   font-weight: bolder;
 }
 
@@ -38,8 +41,4 @@
   font-style: italic;
   font-size: 1.5vw;
   font-weight: bold;
-}
-
-.underline{
-  background: rgba(96,96,96,.5);
 }

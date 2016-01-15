@@ -1,3 +1,6 @@
+$baseFont: "Quicksand";
+$selectFont: "Special Elite";
+
 body {
   background: url(http://i.imgur.com/lDznMxt.png) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -11,7 +14,7 @@ body {
   text-align: center;
   color: white;
   text-transform: uppercase;
-  font-family: "Quicksand";
+  font-family: $baseFont;
   font-weight: bold;
   font-size: 6vw;
   letter-spacing: .075em;
@@ -22,7 +25,7 @@ body {
 }
 
 .carrot {
-  font-family:"Special elite";
+  font-family:$selectFont;
   text-transform: lowercase;
   color: black;
   text-shadow: none;
@@ -32,7 +35,7 @@ body {
   text-align: center;
   margin-right: 4%;
   font-size: 4.8vw;
-  font-family: "Special Elite";
+  font-family: $selectFont;
   color: black;
   text-shadow: none;
   line-height: 30%;
@@ -40,20 +43,10 @@ body {
   padding: 4vw 0 0 0;
 }
 
-.home-links a{
-  color: black;
-  text-decoration: none;
-}
-
-
-.heads img{
-  width: 25%;
-  padding: 2.5%;
-}
 
 .heads{
   margin: 0 5% 0 5%;
-  font-family: "Special Elite";
+  font-family: $selectFont;
 }
 
 .home-links{
@@ -66,7 +59,7 @@ body {
 .subtext{
   text-align: center;
   font-weight: bold;
-  font-family: "Quicksand";
+  font-family: $baseFont;
   background: rgba(255,255,255,.5);
   width: 40%;
   margin: 0 30% 0 30%;
@@ -76,22 +69,17 @@ body {
   font-size: 1.5rem;
 }
 
-.admin a{
-  color: rgba(white,.1);
-  float: right;
-  font-family: "Quicksand";
-}
 
 .admin{
   color: rgba(white,.1);
   float: right;
-  font-family: "Quicksand";
+  font-family: $baseFont;
 }
 
 .error{
   color: red;
   font-size: 5vw;
-  font-family: "Quicksand";
+  font-family: $baseFont;
   font-weight: bold;
 }
 
@@ -102,21 +90,16 @@ body {
 
 .tags{
   text-align: center;
-  font-family: "Special Elite";
+  font-family: $selectFont;
   font-size: 5vw;
   padding-top: 2vw;
 }
 
-.tag a{
-  color: #00688B;
-  font-family: "Special Elite";
-  text-decoration: none;
-  font-weight:bold;
-}
+
 
 .tag{
   color: #00688B;
-  font-family: "Special Elite";
+  font-family: $selectFont;
   text-decoration: none;
   font-weight:bold;
   background-color: rgba(0,104,139,.2);
@@ -125,18 +108,4 @@ body {
 
 .all-tags{
   text-align: left;
-}
-
-.email a{
-  color: #00688B;
-  font-family: "Special Elite";
-  text-decoration: none;
-}
-
-.picture-page img{
-  width: 15vw;
-  margin-top: 5%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }

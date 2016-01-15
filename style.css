@@ -10,7 +10,7 @@
   text-align: center;
   color: white;
   text-transform: uppercase;
-  font-family: "Quicksand"";
+  font-family: $baseFont";
   font-weight: bold;
   font-size: 6vw;
   letter-spacing: .075em;
@@ -21,7 +21,7 @@
 }
 
 .carrot {
-  font-family: "Special Elite";
+  font-family: $selectFont;
   text-transform: lowercase;
   color: #696969;
   text-shadow: none;
@@ -30,7 +30,7 @@
 .not {
   margin: 7% 0 0 20%;
   font-size: 4.8vw;
-  font-family: "Special Elite";
+  font-family: $selectFont;
   color: #696969;
   text-shadow: none;
   line-height: 30%;

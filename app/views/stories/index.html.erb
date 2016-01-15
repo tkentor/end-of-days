@@ -1,19 +1,28 @@
 <% @stories.each do |story| %> <div class="article">
+  <br>
+  <div class="story-time">
+    <%= story.created_at.strftime("%B %d, %Y") %>
+  </div>
 
-  <br><div class="story-time"><%= story.created_at.strftime("%B %d, %Y") %></div>
+  <div class="story-headline">
+    <a href="<%= story.link %>"><%= story.title %></a>
+  </div>
+
+  <div class="body">
+    <p>
+      <%= story.excerpt %>
+    </p>
+  </div>
+
+  <div class="all-tags">
+    <p>
+      <% story.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %>
+    </div>
+    <div class="tag-picture"><% story.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %>
+    </p>
+  </div>
 
 
-    <div class="story-headline"><a href="<%= story.link %>"><%= story.title %></a></div>
-
-  <p>
-    <div class="bodytext body"><%= story.excerpt %></div>
-  </p>
-  <p>
-
-    <div class="all-tags"><% story.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %></div>
-    <div class="tag-picture"><% story.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %></div>
-
-  </p>
 
 
 

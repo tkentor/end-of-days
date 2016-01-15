@@ -1,3 +1,6 @@
+$baseFont: "Quicksand";
+$selectFont: "Special Elite";
+
 .navbar {
   position: fixed;
   top: 0;
@@ -6,7 +9,7 @@
   width: 100%;
   background-color: black;
   color: white;
-  font-family: "Special Elite";
+  font-family: $selectFont;
   padding: 20px;
   opacity: .8;
 }
@@ -36,7 +39,7 @@
     font-weight: bolder;
     background-color: black;
     border-radius: 5%;
-    font-family: "quicksand"
+    font-family: $baseFont
 }
 
 .dropdown-content a {

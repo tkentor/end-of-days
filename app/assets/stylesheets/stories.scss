@@ -2,6 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$baseFont: "Quicksand";
+$selectFont: "Special Elite";
+
+.story-time{
+  color: #CD3700;
+  text-align: right;
+}
 
 .story-headline a{
   color: #00688B;
@@ -9,9 +16,4 @@
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
-}
-
-.story-time{
-  color: #CD3700;
-  text-align: right;
 }
