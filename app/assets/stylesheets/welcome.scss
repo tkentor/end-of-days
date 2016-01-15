@@ -43,17 +43,27 @@ body {
   padding: 4vw 0 0 0;
 }
 
-
 .heads{
-  margin: 0 5% 0 5%;
-  font-family: $selectFont;
+  display: inline-block;
+  display: -moz-inline-box;
+  width:100%;
+  text-align: center;
 }
 
-.home-links{
-  text-align: center;
+.heads-text a{
+  font-family: $selectFont;
+  display: inline-block;
+  display: -moz-inline-box;
+  width: 32%;
   font-weight: bold;
   font-size: 3vw;
-  margin: 8vw;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.heads-left{
+  padding-left: 2%;
 }
 
 .subtext{
@@ -61,12 +71,11 @@ body {
   font-weight: bold;
   font-family: $baseFont;
   background: rgba(255,255,255,.5);
-  width: 40%;
-  margin: 0 30% 0 30%;
+  font-size: 2vw;
 }
 
 .a-blog{
-  font-size: 1.5rem;
+  font-size: 2.4vw;
 }
 
 
@@ -95,8 +104,6 @@ body {
   padding-top: 2vw;
 }
 
-
-
 .tag{
   color: #00688B;
   font-family: $selectFont;
@@ -108,4 +115,12 @@ body {
 
 .all-tags{
   text-align: left;
+}
+
+@media (max-width: 700px){
+
+}
+
+@media (min-width: 1000px){
+
 }

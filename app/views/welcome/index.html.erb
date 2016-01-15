@@ -20,8 +20,16 @@
     <%= image_tag("http://i.imgur.com/ihDXEqz.png") %>
     <% end %>
     <a href='/about'><img src="http://i.imgur.com/lQq7djp.png"></a>
-    <span class="home-links"><%= link_to 'blog', controller: 'articles' %></span><span class="home-links"><%= link_to 'news', controller: 'stories' %></span><span class="home-links"><a href='/about'>about</a></span>
   </div>
+  <span class="heads-text heads-left">
+    <%= link_to 'blog', controller: 'articles' %>
+  </span>
+  <span class="heads-text">
+    <%= link_to 'news', controller: 'stories' %>
+  </span>
+  <span class="heads-text">
+    <a href='/about'>about</a>
+  </span>
 
   <% if current_user %>
   <div class="admin">
