@@ -112,7 +112,10 @@ body {
 }
 
 @media (max-width: 700px){
-
+  body{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 @media (min-width: 1000px){
