@@ -1,25 +1,37 @@
-<p><div class="subtext">a little reason to cure our country's fear –<br><span class="a-blog">a politics & news blog</span></div><br>
-
-  <div class="homepage">
-    <div class="not">not</div>
-    <div class="name">it's<span class="carrot">^</span> the<br>end of<br>days.</div></div>
+<p>
+  <div class="subtext">
+    a little reason to cure our country's fear –<br><span class="a-blog">a politics & news blog</span>
   </div><br>
 
-<div class="heads">
-  <%= link_to articles_path do %>
+  <div class="homepage">
+    <div class="not">
+      not
+    </div>
+    <div class="name">
+      it's<span class="carrot">^</span> the<br>end of<br>days.
+    </div>
+  </div><br>
+
+  <div class="heads">
+    <%= link_to articles_path do %>
     <%= image_tag("http://i.imgur.com/Jhec3xw.png") %>
-  <% end %>
-  <%= link_to stories_path do %>
+    <% end %>
+    <%= link_to stories_path do %>
     <%= image_tag("http://i.imgur.com/ihDXEqz.png") %>
+    <% end %>
+    <a href='/about'><img src="http://i.imgur.com/lQq7djp.png"></a>
+    <span class="home-links"><%= link_to 'blog', controller: 'articles' %></span><span class="home-links"><%= link_to 'news', controller: 'stories' %></span><span class="home-links"><a href='/about'>about</a></span>
+  </div>
+
+  <% if current_user %>
+  <div class="admin">
+    <%= link_to 'signout', destroy_user_session_path, :method => :delete %>
+  </div>
+  <% else %>
+  <div class="admin">
+    <%= link_to 'Signup', new_user_registration_path %>
+  </div>
+  <div class="admin">
+    <%= link_to 'admin', new_user_session_path %>
+  </div>
   <% end %>
-  <a href='/about'><img src="http://i.imgur.com/lQq7djp.png"></a>
-  <span class="home-links"><%= link_to 'blog', controller: 'articles' %></span><span class="home-links"><%= link_to 'news', controller: 'stories' %></span><span class="home-links"><a href='/about'>about</a></span>
-</div>
-
-
-<% if current_user %>
-  <div class="admin"><%= link_to 'signout', destroy_user_session_path, :method => :delete %></div>
-<% else %>
-  <div class="admin"><%= link_to 'Signup', new_user_registration_path %></div>
-  <div class="admin"><%= link_to 'admin', new_user_session_path %></div>
-<% end %>

@@ -1,41 +1,36 @@
-
-
 <div class="article">
 
-    <p>
-      <div class="section body"><strong>What's your point?</strong></div>
-      <div class="title"><%= @article.title %></div>
-    </p>
-    <p>
-      <div class="section body"><strong>How do you know?</strong></div>
-      <div class="body"><%= @article.body %></div>
-    </p>
+  <p>
+    <div class="section body"><strong>What's your point?</strong></div>
+    <div class="title"><%= @article.title %></div>
+  </p>
+  <p>
+    <div class="section body"><strong>How do you know?</strong></div>
+    <div class="body"><%= @article.body %></div>
+  </p>
 
-    <p>
-      <div class="section takeaway"><strong>If I only take one thing away...</strong></div>
-      <div class="takeaway"><%= @article.takeaway %></div>
-    </p>
+  <p>
+    <div class="section takeaway"><strong>If I only take one thing away...</strong></div>
+    <div class="takeaway"><%= @article.takeaway %></div>
+  </p>
 
-    <p>
-      <div class="section action"><strong>So what can we do about it?</strong></div>
-      <div class="action"><%= @article.action %></div>
-    </p>
+  <p>
+    <div class="section action"><strong>So what can we do about it?</strong></div>
+    <div class="action"><%= @article.action %></div>
+  </p>
 
-    <p>
-      <div class="section sources"><strong>Provvve it!</strong></div>
-      <div class="sources"><%= @article.sources %></div>
-    </p>
+  <p>
+    <div class="section sources"><strong>Provvve it!</strong></div>
+    <div class="sources"><%= @article.sources %></div>
+  </p>
 
-    <p>
-        <div class="section pictures"><strong>Tags</strong></div>
-        <div class="sources"><% @article.tags.each do |tag| %><% end %></div>
-
-
-    </p>
+  <p>
+    <div class="section pictures"><strong>Tags</strong></div>
+    <div class="sources"><% @article.tags.each do |tag| %><% end %></div>
+  </p>
 
 </div>
 
 <%= link_to 'Edit', edit_article_path(@article) %>
-
 
 <%= link_to 'Back', articles_path %>

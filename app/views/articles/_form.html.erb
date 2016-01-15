@@ -1,63 +1,63 @@
 <%= form_for @article do |f| %>
 
-  <% if @article.errors.any? %>
-    <div id="error_explanation">
-      <h2>
-        <%= pluralize(@article.errors.count, "error") %> prohibited
-        this article from being saved:
-      </h2>
-      <ul>
-        <% @article.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
+<% if @article.errors.any? %>
+<div id="error_explanation">
+  <h2>
+    <%= pluralize(@article.errors.count, "error") %> prohibited
+    this article from being saved:
+  </h2>
+  <ul>
+    <% @article.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
 
-  <p>
-    <%= f.label :"What's your point?" %><br>
-    <%= f.text_area :title %>
-  </p>
+<p>
+  <%= f.label :"What's your point?" %><br>
+  <%= f.text_area :title %>
+</p>
 
-  <p>
-    <%= f.label :"How do you know?" %><br>
-    <%= f.text_area :body %>
-  </p>
+<p>
+  <%= f.label :"How do you know?" %><br>
+  <%= f.text_area :body %>
+</p>
 
-  <p>
-    <%= f.label :"If I only take one thing away..." %><br>
-    <%= f.text_area :takeaway %>
-  </p>
+<p>
+  <%= f.label :"If I only take one thing away..." %><br>
+  <%= f.text_area :takeaway %>
+</p>
 
-  <p>
-    <%= f.label :"So what can we do about it?" %><br>
-    <%= f.text_area :action %>
-  </p>
+<p>
+  <%= f.label :"So what can we do about it?" %><br>
+  <%= f.text_area :action %>
+</p>
 
-  <p>
-    <%= f.label :"Provvve it!" %><br>
-    <%= f.text_area :sources %>
-  </p>
+<p>
+  <%= f.label :"Provvve it!" %><br>
+  <%= f.text_area :sources %>
+</p>
 
-  <p>
-    <%= f.label :tag_list, "Tags (separated by commas)" %><br>
-    <%= f.text_field :tag_list %>
-  </p>
+<p>
+  <%= f.label :tag_list, "Tags (separated by commas)" %><br>
+  <%= f.text_field :tag_list %>
+</p>
 
-  <p>
-    <%= f.label :picture_list, "pictures" %>
-    <%= f.select :picture_list, [['trump','
+<p>
+  <%= f.label :picture_list, "pictures" %>
+  <%= f.select :picture_list, [['trump','
     http://i.imgur.com/ZIFXVMh.png'],['rubio','
     http://i.imgur.com/EyfKSRt.png'],['hillary','http://i.imgur.com/3fPznJm.png'
     ],['bernie','http://i.imgur.com/q51jBgb.png'],['cruz','
-    http://i.imgur.com/IHHWrFM.png'],['money','
-    http://i.imgur.com/sl6agsU.png'],['farmer','
-    http://i.imgur.com/jIiAzBG.png']],{:prompt => "Please
-    select"},{ :multiple => true } %>
-  </p>
+      http://i.imgur.com/IHHWrFM.png'],['money','
+      http://i.imgur.com/sl6agsU.png'],['farmer','
+      http://i.imgur.com/jIiAzBG.png']],{:prompt => "Please
+      select"},{ :multiple => true } %>
+    </p>
+    
+    <p>
+      <%= f.submit %>
+    </p>
 
-  <p>
-    <%= f.submit %>
-  </p>
-
-<% end %>
+    <% end %>
