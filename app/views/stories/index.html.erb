@@ -9,11 +9,13 @@
     <a href="<%= story.link %>"><%= story.title %></a>
   </div>
 
-  <div class="body">
-    <p>
-      <%= story.excerpt %>
-    </p>
-  </div>
+  <p>
+    <div class="section takeaway">
+      <strong>I don't want to read the whole thing...</strong>
+    </div>
+    <div class="takeaway"><%= story.excerpt %>
+    </div>
+  </p>
 
   <div class="all-tags">
     <p>
