@@ -4,57 +4,55 @@
 <div class="article" id="<%= "article#{article.id}" %>">
   <p>
     <div class="section body">
-      <div class="time">
-        <%= article.created_at.strftime("%B %d, %Y") %>
-      </div>
       <div class="click">
-        [click to expand]
-      </div><br>
-      <div class="expand"><strong>
-        What's your point?</strong>
-      </div></div>
+        [click to elaborate]</div>
+      <div class="time"><%= article.created_at.strftime("%B %d, %Y") %>
+      </div>
+      <div class="expand">
+        <strong>What's your point?</strong>
+      </div>
+    </div>
       <div class="title">
         <%= article.title %>
       </div>
     </p>
     <div class="expand">
       <p>
-        <div class="section body"><strong>
-          How do you know?</strong></div>
-          <div class="body"><%= article.body %>
-          </div>
-        </p>
-      </div>
-      <p>
-        <div class="section takeaway"><strong>
-          If I only take one thing away...</strong>
+        <div class="section body">
+          <strong>How do you know?</strong>
         </div>
-        <div class="takeaway">
-          <%= article.takeaway %>
+        <div class="body"><%= article.body %></div>
+      </p>
+    </div>
+    <p>
+      <div class="section takeaway">
+        <strong>If I only take one thing away...</strong>
+      </div>
+      <div class="takeaway"><%= article.takeaway %>
+      </div>
+    </p>
+    <div class="expand">
+      <p>
+        <div class="section action">
+          <strong>So what can we do about it?</strong>
+        </div>
+        <div class="action">
+          <%= article.action %>
         </div>
       </p>
-      <div class="expand">
-        <p>
-          <div class="section action">
-            <strong>So what can we do about it?</strong>
-          </div>
-          <div class="action">
-            <%= article.action %>
-          </div>
-        </p>
-        <p>
-          <div class="section sources">
-            <strong>Provvve it!</strong>
-          </div>
-          <div class="sources">
-            <%= article.sources %>
-          </div>
-        </p>
-        <p>
-          <div class="all-tags">
-            <% article.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %>
-          </div>
+      <p>
+        <div class="section sources">
+          <strong>Provvve it!</strong>
         </div>
+        <div class="sources">
+          <%= article.sources %>
+        </div>
+      </p>
+      <p>
+        <div class="all-tags">
+          <% article.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %>
+        </div>
+      </div>
         <div class="tag-picture">
           <% article.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %>
         </div>
@@ -63,27 +61,33 @@
   </div>
 
   <% @stories.each do |story| %>
-  <div class="article"><br>
-    <div class="story-time"><%= story.created_at.strftime("%B %d, %Y") %>
+  <div class="article">
+    <br>
+
+    <div class="story-time">
+      <%= story.created_at.strftime("%B %d, %Y") %>
     </div>
+
+    <div class="story-headline">
+      <a href="<%= story.link %>"><%= story.title %></a>
+    </div>
+
     <p>
-      <div class="story-headline">
-        <a href="<%= story.link %>"><%= story.title %></a>
+      <div class="section takeaway">
+        <strong>I don't want to read the whole thing. Give me an excerpt.</strong>
+      </div>
+      <div class="body"><%= story.excerpt %>
       </div>
     </p>
-    <p>
-      <div class="body">
-        <%= story.excerpt %>
-      </div>
-    </p>
-    <p>
-      <div class="all-tags">
+
+    <div class="all-tags">
+      <p>
         <% story.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %>
       </div>
-      <div class="tag-picture">
-        <% story.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %>
-      </div>
-    </p>
+      <div class="tag-picture"><% story.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %>
+      </p>
+
+    </div>
   </div>
 
   <% end %>
