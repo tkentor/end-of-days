@@ -1,6 +1,7 @@
 <% @stories.each do |story| %>
 <div class="article">
   <br>
+
   <div class="story-time">
     <%= story.created_at.strftime("%B %d, %Y") %>
   </div>
@@ -23,6 +24,7 @@
     </div>
     <div class="tag-picture"><% story.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %>
     </p>
+
   </div>
 
   <div class="admin">
