@@ -3,7 +3,6 @@ class StoriesController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
 
   def index
-    @stories = Story.all
     @stories = Story.order('created_at DESC')
   end
 
