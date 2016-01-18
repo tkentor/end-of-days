@@ -6,6 +6,9 @@ class Story < ActiveRecord::Base
   has_many :depictions, :dependent => :delete_all
   has_many :pictures, through: :depictions, :dependent => :delete_all
 
+  resourcify
+
+
   def self.tagged_with(name)
     Tag.find_by_name!(name).stories
   end
