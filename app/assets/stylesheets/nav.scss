@@ -51,8 +51,11 @@ $selectFont: "Special Elite";
   .navbar-left a{
     display: none;
   }
-  .topics{
+  .navbar-topics{
     display:none;
+  }
+  .navbar-about{
+    display: none;
   }
   .dbaf{
     display:none;
@@ -61,4 +64,19 @@ $selectFont: "Special Elite";
 
 @media (min-width: 1000px){
 
+}
+
+@media handheld {
+  .dropdown-content a:focus {
+    background-color: #00688B;
+    border-radius: 5%;
+  }
+
+  .dropdown:focus .dropdown-content {
+      display: block;
+  }
+
+  .dropdown:focus .dropbtn {
+      background-color: #3e8e41;
+  }
 }

@@ -20,51 +20,51 @@
     </div>
     <div class="col-1"></div>
 
-        <div class="navbar-right col-3"><%= link_to 'blog', articles_path %></div>
+    <div class="navbar-right col-3"><%= link_to 'blog', articles_path %></div>
 
-          <div class="navbar-right col-3"><%= link_to 'news', stories_path %></div>
+    <div class="navbar-right col-3"><%= link_to 'news', stories_path %></div>
 
-          <span class="font-effect-neon col-3">
-            <div class="navbar-right"><a href='/about'>about</a></div>
-          </span>
 
-          <div class="dropdown col-3">
-            <div class="navbar-right"><span class="topics">
-              ratings</span>
-            </div>
-            <div class="dropdown-content">
-              <a href="/pictures/7">mongering</a>
-              <a href="/pictures/8">hyperbolic</a>
-              <a href="/pictures/9">dishonest</a>
-              <a href="/pictures/10">laughable</a>
-              <a href="/pictures/13">very nice!</a>
-            </div>
-          </div>
 
-          <div class="dropdown col-3">
-            <div class="navbar-right"><span class="topics">
-              topics</span>
-            </div>
-            <div class="dropdown-content">
-              <a href="/tags/6">the election</a>
-              <a href="/tags/7">guns</a>
-              <a href="/tags/2">terrorism</a>
-              <a href="/tags/8">climate</a>
-              <a href="/tags/9">healthcare</a>
-              <a href="/tags/10">immigration</a>
-              <a href="/tags/11">criminal justice</a>
-            </div>
+    <div class="dropdown col-3">
+      <span class="topics">
+        ratings</span>
+        <div class="dropdown-content">
+          <a href="/pictures/7">mongering</a>
+          <a href="/pictures/8">hyperbolic</a>
+          <a href="/pictures/9">dishonest</a>
+          <a href="/pictures/10">laughable</a>
+          <a href="/pictures/13">very nice!</a>
+        </div>
+      </div>
+
+      <div class="dropdown col-3">
+        <div class="navbar-topics"><span class="topics">
+          topics</span>
+        </div>
+        <div class="dropdown-content">
+          <a href="/tags/6">the election</a>
+          <a href="/tags/7">guns</a>
+          <a href="/tags/2">terrorism</a>
+          <a href="/tags/8">climate</a>
+          <a href="/tags/9">healthcare</a>
+          <a href="/tags/10">immigration</a>
+          <a href="/tags/11">criminal justice</a>
+        </div>
+      </div>
+
+      <span class="font-effect-neon col-3">
+        <div class="navbar-about"><a href='/about'>about</a></div>
+      </span>
+
+      <div class="navbar-right dbaf col-1">
+        <a href="http://dontbeafarmer.com">&#9733</a>
+      </div>
+
+
+
+
     </div>
-
-
-    <div class="navbar-right dbaf col-1">
-      <a href="http://dontbeafarmer.com">&#9733</a>
-    </div>
-
-
-
-
-  </div>
-  <%= yield %>
-</body>
-</html>
+    <%= yield %>
+  </body>
+  </html>
