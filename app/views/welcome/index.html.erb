@@ -3,33 +3,52 @@
     like a deep breath, in the form of news –<br><span class="a-blog">a politics & news blog</span>
   </div><br>
 
-  <div class="homepage">
-    <div class="not">
-      not
-    </div>
-    <div class="name">
-      it's<span class="carrot">^</span> the<br>end of<br>days.
-    </div>
-  </div><br>
-
-  <div class="heads">
-    <%= link_to articles_path do %>
-    <%= image_tag("http://i.imgur.com/Jhec3xw.png") %>
-    <% end %>
-    <%= link_to stories_path do %>
-    <%= image_tag("http://i.imgur.com/ihDXEqz.png") %>
-    <% end %>
-    <a href='/about'><img src="http://i.imgur.com/lQq7djp.png"></a>
+  <div class="row">
+    <div class="col-8"></div>
+    <div class="col-8 homepage">
+      <div class="not">
+        not
+      </div>
+      <div class="name">
+        it's<span class="carrot">^</span> the<br>end of<br>days.
+      </div></div>
+          <div class="col-8"></div>
+    </div><br>
   </div>
-  <span class="heads-text heads-left">
-    <%= link_to 'blog', controller: 'articles' %>
-  </span>
-  <span class="heads-text">
-    <%= link_to 'news', controller: 'stories' %>
-  </span>
-  <span class="heads-text">
-    <a href='/about'>about</a>
-  </span>
+
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-5 heads">
+      <%= link_to articles_path do %>
+      <%= image_tag("http://i.imgur.com/Jhec3xw.png") %>
+      <% end %>
+      <div class="row"><span class="heads-text">
+        <%= link_to 'blog', controller: 'articles' %>
+      </span></div>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-5 heads">
+      <%= link_to stories_path do %>
+      <%= image_tag("http://i.imgur.com/ihDXEqz.png") %>
+      <% end %>
+      <div class="row">
+        <span class="heads-text">
+          <%= link_to 'news', controller: 'stories' %>
+        </span>
+      </div>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-5 heads">
+      <a href='/about'><img src="http://i.imgur.com/lQq7djp.png"></a>
+      <div class="row">
+        <span class="heads-text">
+          <a href='/about'>about</a>
+        </span>
+      </div>
+    </div>
+    <div class="col-4"></div>
+  </div>
+
 
   <% if current_user %>
   <div class="admin">

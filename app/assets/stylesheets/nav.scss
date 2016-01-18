@@ -19,20 +19,6 @@ $selectFont: "Special Elite";
   text-decoration: none;
 }
 
-.navbar-right a{
-  float: right;
-  width: 90px;
-}
-
-.navbar-left a{
-  float: left;
-}
-
-.dropdown {
-    float: right;
-    width: 90px;
-}
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -66,6 +52,9 @@ $selectFont: "Special Elite";
     display: none;
   }
   .topics{
+    display:none;
+  }
+  .dbaf{
     display:none;
   }
 }

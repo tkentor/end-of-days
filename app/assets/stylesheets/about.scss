@@ -17,7 +17,7 @@ $selectFont: "Special Elite";
 
 .about-text{
   font-family: $baseFont;
-  font-size: 2vw;
+  font-size: 1rem;
   text-align: justify;
   margin: 0 10%;
   background: rgba(255,255,255,.8);
@@ -36,11 +36,24 @@ $selectFont: "Special Elite";
 
 .disclaimer{
   font-style: italic;
-  font-size: 1.5vw;
+  font-size: .8rem;
 }
 
 .email a{
   color: #00688B;
   font-family: $selectFont;
   text-decoration: none;
+}
+
+
+@media (max-width: 700px){
+
+}
+
+@media (min-width: 700px) and (max-width: 1000px){
+
+}
+
+@media (min-width: 1000px){
+
 }
