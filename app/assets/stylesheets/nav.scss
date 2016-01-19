@@ -67,16 +67,5 @@ $selectFont: "Special Elite";
 }
 
 @media handheld {
-  .dropdown-content a:active {
-    background-color: #00688B;
-    border-radius: 5%;
-  }
 
-  .dropdown:active .dropdown-content {
-      display: block;
-  }
-
-  .dropdown:active .dropbtn {
-      background-color: #3e8e41;
-  }
 }
