@@ -1,0 +1,122 @@
+<% @articles.each do |article| %>
+<div class="article" id="<%= "article#{article.id}" %>">
+  <p>
+    <div class="section body">
+      <div class="click font-effect-fire">
+        [click to expand]</div>
+      <div class="time"><%= article.created_at.strftime("%B %d, %Y") %>
+      </div>
+      <div class="expand">
+        <strong>What's your point?</strong>
+      </div>
+    </div>
+      <div class="title">
+        <%= article.title %>
+      </div>
+    </p>
+    <div class="expand">
+      <p>
+        <div class="section body">
+          <strong>How do you know?</strong>
+        </div>
+        <div class="body padding"><%= article.body %></div>
+      </p>
+    </div>
+    <p>
+      <div class="section takeaway">
+        <strong>If I only take one thing away...</strong>
+      </div>
+      <div class="takeaway padding"><%= article.takeaway %>
+      </div>
+    </p>
+    <div class="expand">
+      <p>
+        <div class="section action">
+          <strong>So what can we do about it?</strong>
+        </div>
+        <div class="action padding">
+          <%= article.action %>
+        </div>
+      </p>
+      <p>
+        <div class="section sources">
+          <strong>Provvve it!</strong>
+        </div>
+        <div class="sources padding">
+          <%= article.sources %>
+        </div>
+      </p>
+      <p>
+        <div class="all-tags">
+          <% article.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %>
+        </div>
+      </div>
+        <div class="tag-picture">
+          <% article.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %>
+        </div>
+      </p>
+
+      <div class="admin">
+        <%= link_to 'edit', edit_article_path(article) %> |
+      </div>
+      <div class="admin">
+        <%= link_to 'delete', article_path(article),
+        method: :delete,
+        data: { confirm: 'Are you sure?' } %>
+      </div>
+    </div>
+
+    <% @stories.each do |story| %>
+    <div class="article" id="<%= "story#{story.id}" %>">
+      <p>
+        <div class="section body">
+          <div class="click font-effect-fire">
+            [click to expand]</div>
+          <div class="time"><%= story.created_at.strftime("%B %d, %Y") %>
+          </div>
+        </div>
+        <div class="story-headline">
+          <%= story.title %>
+        </div>
+          <div class="from takeaway">
+            <strong>from</strong> <span class="story-source"><a href="<%= story.link %>"><%= story.source %></a></span></div>
+        </p>
+        <p>
+        <div class="expand">
+          <div class="section takeaway">
+            <strong>Just give me an excerpt.</strong>
+          </div>
+          <div class="body padding"><%= story.excerpt %>
+          </div>
+        </div>
+        </p>
+        <div class="expand">
+          <!-- <p>
+            <div class="section takeaway">
+              <strong>INTED's take:</strong>
+            </div>
+            <div class="body padding"><%= story.take %>
+            </div>
+            <p> -->
+              <div class="all-tags">
+                <% story.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %>
+              </div>
+            </div>
+              <div class="tag-picture">
+                <% story.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %>
+              </div>
+            </p>
+
+            <div class="admin">
+              <%= link_to 'edit', edit_story_path(story) %> |
+            </div>
+            <div class="admin">
+              <%= link_to 'delete', story_path(story),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %>
+            </div>
+          </div>
+
+
+  <% end %>
+  <% end %>
