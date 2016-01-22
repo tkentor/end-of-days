@@ -4,8 +4,8 @@
 <div class="article" id="<%= "story#{story.id}" %>">
   <p>
     <div class="section body">
-      <div class="click">
-        [click to elaborate]</div>
+      <div class="click font-effect-fire">
+        [click for excerpt]</div>
       <div class="time"><%= story.created_at.strftime("%B %d, %Y") %>
       </div>
     </div>
@@ -13,14 +13,16 @@
       <a href="<%= story.link %>"><%= story.title %></a>
     </div>
       <div class="from takeaway">
-        <strong>from</strong> <span class="story-source"><%= story.source %></span></div>
+        <strong>from</strong> <span class="story-source"><a href="<%= story.link %>"><%= story.source %></a></span></div>
     </p>
     <p>
+    <div class="expand">
       <div class="section takeaway">
         <strong>Just give me an excerpt.</strong>
       </div>
       <div class="body padding"><%= story.excerpt %>
       </div>
+    </div>
     </p>
     <div class="expand">
       <p>

@@ -17,9 +17,11 @@ $selectFont: "Special Elite";
   text-transform: uppercase;
 }
 
-.story-source{
+.story-source a{
   font-style: italic;
   background: rgba(49,79,79,.2);
+  text-decoration: none;
+  color: #2f4f4f;
 }
 
 .from{
