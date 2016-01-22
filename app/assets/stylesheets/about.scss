@@ -49,10 +49,11 @@ $selectFont: "Special Elite";
 .about-heads img{
   display: inline-block;
   display: -moz-inline-box;
-  width: 20%;
+  width: 100%;
 }
 
 .borat img{
+  width: 25%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -78,7 +79,7 @@ $selectFont: "Special Elite";
   margin-top: 3%;
   text-align: center;
   font-family: $selectFont;
-  font-size: 3vw;
+  font-size: 2vw;
 }
 
 .ratings{
