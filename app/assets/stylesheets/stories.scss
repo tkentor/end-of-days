@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$baseFont: "Quicksand";
+$baseFont: "Montserrat";
 $selectFont: "Special Elite";
 
 .story-time{
@@ -19,4 +19,9 @@ $selectFont: "Special Elite";
 
 .story-source{
   font-style: italic;
+  background: rgba(49,79,79,.2);
+}
+
+.from{
+  color: rgb(49,79,79);
 }

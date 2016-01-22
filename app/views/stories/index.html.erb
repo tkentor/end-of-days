@@ -12,14 +12,14 @@
     <div class="story-headline">
       <a href="<%= story.link %>"><%= story.title %></a>
     </div>
-      <div class="section takeaway">
+      <div class="from takeaway">
         <strong>from</strong> <span class="story-source"><%= story.source %></span></div>
     </p>
     <p>
       <div class="section takeaway">
-        <strong>I don't want to read the whole thing. Give me an excerpt.</strong>
+        <strong>Just give me an excerpt.</strong>
       </div>
-      <div class="body"><%= story.excerpt %>
+      <div class="body padding"><%= story.excerpt %>
       </div>
     </p>
     <div class="expand">
@@ -27,7 +27,7 @@
         <div class="section takeaway">
           <strong>INTED's take:</strong>
         </div>
-        <div class="body"><%= story.take %>
+        <div class="body padding"><%= story.take %>
         </div>
         <p>
           <div class="all-tags">

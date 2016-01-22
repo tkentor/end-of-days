@@ -1,4 +1,4 @@
-$baseFont: "Quicksand";
+$baseFont: "Montserrat";
 $selectFont: "Special Elite";
 
 .article{
@@ -11,7 +11,7 @@ $selectFont: "Special Elite";
 
 .section{
   font-family: $selectFont;
-  color: black;
+  color: #CD3700;
 }
 
 .title{
@@ -45,6 +45,7 @@ $selectFont: "Special Elite";
   color: #CD3700;
   position: relative;
   font-family: $baseFont;
+  font-size: 1.1rem;
 }
 
 .time-right{
@@ -87,6 +88,10 @@ $selectFont: "Special Elite";
 .heads img{
   width: 25%;
   padding: 2.5%;
+}
+
+.padding{
+  padding: 10px;
 }
 
 
