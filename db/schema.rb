@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160118165911) do
+ActiveRecord::Schema.define(version: 20160122160057) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,17 @@ ActiveRecord::Schema.define(version: 20160118165911) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "citations", force: :cascade do |t|
+    t.integer  "article_id"
+    t.integer  "story_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "source"
+  end
+
+  add_index "citations", ["article_id"], name: "index_citations_on_article_id", using: :btree
+  add_index "citations", ["story_id"], name: "index_citations_on_story_id", using: :btree
 
   create_table "depictions", force: :cascade do |t|
     t.integer  "picture_id"
@@ -61,6 +72,8 @@ ActiveRecord::Schema.define(version: 20160118165911) do
     t.text     "excerpt"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "source"
+    t.string   "take"
   end
 
   create_table "taggings", force: :cascade do |t|
@@ -107,6 +120,8 @@ ActiveRecord::Schema.define(version: 20160118165911) do
 
   add_index "users_roles", ["user_id", "role_id"], name: "index_users_roles_on_user_id_and_role_id", using: :btree
 
+  add_foreign_key "citations", "articles"
+  add_foreign_key "citations", "stories"
   add_foreign_key "depictions", "articles"
   add_foreign_key "depictions", "pictures"
   add_foreign_key "depictions", "stories"

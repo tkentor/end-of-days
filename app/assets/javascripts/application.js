@@ -22,6 +22,12 @@ $(document).ready(function(){
       $(this).find(".time").toggleClass("time-right")
     })
 
+  $(".story").click(function(){
+      $(this).find(".expand").toggle();
+      $(this).find(".click").toggle();
+      $(this).find(".time").toggleClass("time-right")
+    })
+
   $("img[src='']").remove();
 
 });
