@@ -29,28 +29,27 @@
         </div>
         <div class="body"><%= story.take %>
         </div>
-      </p>
-      <div class="all-tags">
         <p>
-          <% story.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %>
+          <div class="all-tags">
+            <% story.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %>
+          </div>
         </div>
-        <div class="tag-picture"><% story.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %>
+          <div class="tag-picture">
+            <% story.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %>
+          </div>
         </p>
+
+        <div class="admin">
+          <%= link_to 'edit', edit_story_path(story) %> |
+        </div>
+        <div class="admin">
+          <%= link_to 'delete', story_path(story),
+          method: :delete,
+          data: { confirm: 'Are you sure?' } %>
+        </div>
       </div>
 
-</div>
-
-  <div class="admin">
-    <%= link_to 'edit', edit_story_path(story) %> |
-    <%= link_to 'delete', story_path(story),
-    method: :delete,
-    data: { confirm: 'Are you sure?' } %>
-  </div>
-
-
-</div>
-
-<% end %>
+      <% end %>
 
 <div class="admin">
   <%= link_to 'new', new_story_path %>
