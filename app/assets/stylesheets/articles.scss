@@ -94,6 +94,13 @@ $selectFont: "Special Elite";
   padding-top: 10px;
 }
 
+.quote{
+  text-align: center;
+  margin-left: auto;
+  font-family: "quicksand";
+  max-width: 60%;
+}
+
 
 @media (max-width: 700px){
   .tag-picture img{
