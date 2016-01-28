@@ -7,6 +7,7 @@ $selectFont: "Special Elite";
   font-family: $baseFont;
   margin: 6% 7% 10% 7%;
   box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+  cursor: pointer;
 }
 
 .section{
@@ -103,7 +104,8 @@ $selectFont: "Special Elite";
   width: 2vw;
   float: left;
   padding-right: 1%;
-  margin-left: 50%;
+  margin-left: 45%;
+  cursor: pointer;
 }
 
 

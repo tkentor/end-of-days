@@ -1,5 +1,4 @@
-<div class="tags">from the web</div><div class="dice"><img src="http://i.imgur.com/CbCHbB1.png" id="dice-pic"></div>
-  <div class="quote font-effect-outline"> </div>
+<div class="tags">from the web</div>
 
 <% @stories.each do |story| %>
 <div class="article" id="<%= "story#{story.id}" %>">
@@ -14,7 +13,7 @@
       <%= story.title %>
     </div>
       <div class="from takeaway">
-        <strong>from</strong> <span class="story-source"><a href="<%= story.link %>"><%= story.source %></a></span></div>
+        <strong>from</strong> <span class="story-source"><a href="<%= story.link %>"><%= story.source %>&nbsp</a></span></div>
     </p>
     <p>
     <div class="expand">
