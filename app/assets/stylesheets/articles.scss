@@ -95,10 +95,15 @@ $selectFont: "Special Elite";
 }
 
 .quote{
-  text-align: center;
-  margin-left: auto;
   font-family: $baseFont;
-  max-width: 60%;
+  font-size: 1.5vw;
+}
+
+.dice img{
+  width: 2vw;
+  float: left;
+  padding-right: 1%;
+  margin-left: 50%;
 }
 
 

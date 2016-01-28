@@ -30,11 +30,17 @@ $(document).ready(function(){
 
   $("img[src='']").remove();
 
-  $(document).ready(function() {
-      var quotes = new Array("welcome to my snoop bloggy blog", "get rich or die blogging", "bloggy style. blah-blah-bloggy style.", "live free or blog hard", "eat. blog. repeat.", "it's a blog off.", "bloggers too can't not die in a freak gasoline fight accident.", "the blogs are in the computer.", "i love blog. bloggy blog blog. here it goes, down into my belly.", "wait. you changed your name, to McBloggin?", "blog. james blog.", "you like blogs? how you like them blogs.", "where we are going, we don't need blogs.", "rule #76: no excuses. blog like a champion", "not my blog. not hermione's blog. yours, harry."),
-      randno = quotes[Math.floor( Math.random() * quotes.length )];
-      $('.quote').text( randno );
+  var quotes = new Array("welcome to my snoop bloggy blog", "get rich or die blogging", "bloggy style. bla-bla-bloggy style.", "eat. read. repeat.", "it's a blog off.", "bloggers too can't not die in a freak gasoline fight accident.", "the blogs are in the computer.", "blog. james blog.", "rule #76: no excuses. blog like a champion.","if you don't know, now you know.", "like a deep breath, in news form.", "saving the world, one unread blog post at a time.", "it's gluten free", "content delivered on time, or it's free!"),
+  randno = quotes[Math.floor( Math.random() * quotes.length )];
+  $('.quote').text( randno );
+
+  $("#dice-pic").click(function(){
+  var quotes = new Array("welcome to my snoop bloggy blog", "get rich or die blogging", "bloggy style. bla-bla-bloggy style.", "eat. read. repeat.", "it's a blog off.", "bloggers too can't not die in a freak gasoline fight accident.", "the blogs are in the computer.", "blog. james blog.", "rule #76: no excuses. blog like a champion.","if you don't know, now you know.", "like a deep breath, in news form.", "saving the world, one unread blog post at a time.", "it's gluten free", "content delivered on time, or it's free!"),
+  randno = quotes[Math.floor( Math.random() * quotes.length )];
+  $('.quote').text( randno );
   });
+
+
 
 
 });
