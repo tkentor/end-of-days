@@ -17,7 +17,7 @@
 $(document).ready(function(){
 
 
-  $(".article").hide();
+  $(".behind-image").hide();
 
   $(".article").click(function(){
     $(this).find(".expand").toggle();
