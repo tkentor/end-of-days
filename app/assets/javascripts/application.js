@@ -16,11 +16,19 @@
 
 $(document).ready(function(){
 
+
+  $(".article").hide();
+
   $(".article").click(function(){
     $(this).find(".expand").toggle();
     $(this).find(".click").toggle();
     $(this).find(".time").toggleClass("time-right")
   })
+
+  $(".article-image").click(function(){
+    $(".article-image").hide();
+    $(".article").show();
+  });
 
   $(".story").click(function(){
     $(this).find(".expand").toggle();
