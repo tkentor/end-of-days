@@ -25,9 +25,9 @@ $(document).ready(function(){
     $(this).find(".time").toggleClass("time-right")
   })
 
-  $(".article-image").click(function(){
-    $(".article-image").hide();
-    $(".article").show();
+  $(".article-container").click(function(){
+    $(this).find(".article-image").hide();
+    $(this).find(".article").show();
   });
 
   $(".story").click(function(){

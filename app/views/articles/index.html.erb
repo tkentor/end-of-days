@@ -60,7 +60,7 @@
           <% article.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %>
         </div>
       </p>
-
+    </div>
       <div class="admin">
         <%= link_to 'edit', edit_article_path(article) %> |
       </div>
@@ -69,7 +69,7 @@
         method: :delete,
         data: { confirm: 'Are you sure?' } %>
       </div>
-    </div>
+
   </div>
 
     <% end %>
