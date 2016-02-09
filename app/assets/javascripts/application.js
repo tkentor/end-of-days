@@ -17,7 +17,7 @@
 $(document).ready(function(){
 
 
-  $(".article").hide();
+  // $(".article").hide();
 
   $(".article").click(function(){
     $(this).find(".expand").toggle();
@@ -25,10 +25,10 @@ $(document).ready(function(){
     $(this).find(".time").toggleClass("time-right")
   })
 
-  $(".article-container").click(function(){
-    $(this).find(".article-image").hide();
-    $(this).find(".article").show();
-  });
+  // $(".article-container").click(function(){
+  //   $(this).find(".article-image").hide();
+  //   $(this).find(".article").show();
+  // });
 
   $(".story").click(function(){
     $(this).find(".expand").toggle();
