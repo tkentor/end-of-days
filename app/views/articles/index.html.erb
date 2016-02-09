@@ -2,6 +2,7 @@
   <div class="quote"> </div>
 
 <% @articles.each do |article| %>
+<div class="article-image"><%= image_tag("#{article.hero}") %></div>
 <div class="article" id="<%= "article#{article.id}" %>">
   <p>
     <div class="section body">

@@ -51,7 +51,7 @@ private
   end
 
   def article_params
-    params.require(:article).permit(:title, :body, :takeaway, :action, :sources, :timestamps, :tag_list, :picture_list => [])
+    params.require(:article).permit(:title, :body, :takeaway, :action, :sources, :hero, :timestamps, :tag_list, :picture_list => [])
   end
 
 end

@@ -10,6 +10,24 @@ $selectFont: "Special Elite";
   cursor: pointer;
 }
 
+
+
+.article-image img{
+  border: 20px solid black;
+  font-family: $baseFont;
+  margin: 5% 7% 0 5%;
+  cursor: pointer;
+  width: 85%;
+
+}
+
+
+
+
+
+
+
+
 .section{
   font-family: $selectFont;
   color: #CD3700;
