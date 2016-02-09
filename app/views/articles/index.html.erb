@@ -2,8 +2,8 @@
   <div class="quote"> </div>
 
 <% @articles.each do |article| %>
-<!-- <div class="article-container">
-<div class="article-image"><div id="<%= "article#{article.id}" %>"><%= image_tag("#{article.hero}") %></div></div> -->
+<div class="article-container">
+<div class="article-image"><div id="<%= "article#{article.id}" %>"><%= image_tag("#{article.hero}") %></div></div>
 <div class="article" id="<%= "article#{article.id}" %>">
   <p>
     <div class="section body">
@@ -70,7 +70,7 @@
         data: { confirm: 'Are you sure?' } %>
       </div>
 
-  <!-- </div> -->
+  </div>
 
     <% end %>
 
