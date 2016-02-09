@@ -30,7 +30,7 @@ $(document).ready(function(){
     $(this).find(".article").show();
   });
 
-  $(".story").click(function(){
+  $(".article-story").click(function(){
     $(this).find(".expand").toggle();
     $(this).find(".click").toggle();
     $(this).find(".time").toggleClass("time-right")
