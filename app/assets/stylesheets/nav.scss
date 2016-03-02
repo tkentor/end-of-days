@@ -35,7 +35,7 @@ $selectFont: "Special Elite";
 }
 
 .dropdown-content a:hover {
-  background-color: #00688B;
+  background-color: #7171C6;;
   border-radius: 5%;
 }
 
@@ -45,6 +45,10 @@ $selectFont: "Special Elite";
 
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
+}
+
+.navbar-about{
+  text-shadow: -2px -2px 2px  #7171C6, 2px 2px 2px  #7171C6;
 }
 
 @media (max-width: 700px){

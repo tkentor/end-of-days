@@ -1,10 +1,11 @@
 <div class="tags">from the web</div>
+<div class="instructions">click a <span>[post]</span> to read more. click a <span>[face]</span> to explore.</div>
 
 <% @stories.each do |story| %>
 <div class="article-story" id="<%= "story#{story.id}" %>">
   <p>
     <div class="section body">
-      <div class="click font-effect-fire">
+      <div class="click">
         [click to expand]</div>
       <div class="time"><%= story.created_at.strftime("%B %d, %Y") %>
       </div>

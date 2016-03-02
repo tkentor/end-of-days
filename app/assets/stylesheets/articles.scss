@@ -12,6 +12,22 @@ $selectFont: "Special Elite";
   cursor: pointer;
 }
 
+.instructions{
+  font-family: $baseFont;
+  text-align: center;
+  // background-color: #F2F2F2;
+  color: black;
+  // border-top: 3px solid black;
+  // border-left: 5px solid black;
+  margin: 0 25%;
+  font-size: 1rem;
+}
+
+.instructions span{
+  font-family: $selectFont;
+  font-weight: bold;
+	text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+}
 
 
 .article-image img{
@@ -23,15 +39,7 @@ $selectFont: "Special Elite";
 }
 
 .article-image{
-
 }
-
-
-
-
-
-
-
 
 .section{
   font-family: $selectFont;
