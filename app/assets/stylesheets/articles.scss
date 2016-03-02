@@ -1,12 +1,14 @@
-$baseFont: "Montserrat";
+$baseFont: "Open Sans";
 $selectFont: "Special Elite";
 
 .article{
-  background: rgb(255,255,255);
+  // background: rgb(255,255,255);
+  // background-image: url(http://i.imgur.com/lDznMxt.png);
+  background-color: #F2F2F2;
   padding: .5% 2% 1% 2%;
   font-family: $baseFont;
   margin: 6% 7% 10% 7%;
-  box-shadow: 0px 0px 10px black;
+  border-left: 5px solid black;
   cursor: pointer;
 }
 
@@ -15,7 +17,7 @@ $selectFont: "Special Elite";
 .article-image img{
   border: 20px solid black;
   font-family: $baseFont;
-  margin: 5% 7% 0 5%;
+  margin: 5% 7% 5% 5%;
   cursor: pointer;
   width: 85%;
 }
@@ -78,6 +80,7 @@ $selectFont: "Special Elite";
 .tag-picture img{
   float: right;
   width: 8vw;
+
 }
 
 .picture-page img{

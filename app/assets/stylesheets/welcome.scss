@@ -1,12 +1,13 @@
-$baseFont: "Montserrat";
+$baseFont: "Open Sans";
 $selectFont: "Special Elite";
 
 body {
-  background: url(http://i.imgur.com/lDznMxt.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  // background: url(http://i.imgur.com/lDznMxt.png) no-repeat center center fixed;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
+  background-color: white;
   padding-top: 70px;
 }
 

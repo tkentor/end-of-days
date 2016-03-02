@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$baseFont: "Montserrat";
+$baseFont: "Open Sans";
 $selectFont: "Special Elite";
 
 .story-time{
@@ -17,9 +17,9 @@ $selectFont: "Special Elite";
 
 .story-source a{
   font-style: italic;
-  background: rgba(49,79,79,.2);
+  background: #7171C6;
   text-decoration: none;
-  color: #2f4f4f;
+  color: white;
   box-shadow: 2px 2px 1px #888888;
 }
 
@@ -28,10 +28,11 @@ $selectFont: "Special Elite";
 }
 
 .article-story{
-  background: rgb(255,255,255);
+  background: #F2F2F2;
   padding: .5% 2% 1% 2%;
   font-family: $baseFont;
   margin: 6% 7% 10% 7%;
-  box-shadow: 0px 0px 10px black;
+  // box-shadow: 0px 0px 5px black;
   cursor: pointer;
+  border-left: 5px solid black;
 }
