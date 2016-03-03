@@ -31,12 +31,13 @@ $selectFont: "Special Elite";
 
 
 .article-image img{
-  border-right: 30px solid black;
+  border-right: 5px solid black;
+  border-left: 5px solid black;
   font-family: $baseFont;
-  margin: 4% 7% 5% 5%;
-  padding-left: 2%;
+  margin: 4% 7% 5% 7%;
+  padding: 0 3%;
   cursor: pointer;
-  width: 85%;
+  width: 80%;
 }
 
 .article-image{
