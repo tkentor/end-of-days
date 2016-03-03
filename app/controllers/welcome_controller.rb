@@ -1,5 +1,7 @@
 class WelcomeController < ApplicationController
   def index
+    @articles = Article.order('created_at DESC')
+    @stories = Story.limit(3).order('created_at DESC')
   end
 
   def about
@@ -9,6 +11,8 @@ class WelcomeController < ApplicationController
     @articles = Article.order('created_at DESC')
     @stories = Story.order('created_at DESC')
   end
+
+
 
 
 end
