@@ -1,4 +1,4 @@
-$baseFont: "Open Sans";
+$baseFont: "Quicksand";
 $selectFont: "Special Elite";
 
 body {
@@ -13,15 +13,16 @@ body {
 
 .name {
   text-align: center;
-  color: white;
+  color: black;
   text-transform: uppercase;
   font-family: "Quicksand";
   font-size: 6vw;
   letter-spacing: .075em;
-  text-shadow: -2px 0px 2px #FFFFFF, -3px 0px 30px #0052A5, -2.5px 0px 70px #E0162B, -4px 1px 2px #FFFFFF, -6px 1px 30px #0052A5, -5px 1px 70px #E0162B, -6px 2px 2px #FFFFFF, -9px 2px 30px #0052A5, -7.5px 2px 70px #E0162B, -8px 3px 2px #FFFFFF, -12px 3px 30px #0052A5, -10px 3px 70px #E0162B, -10px 4px 2px #FFFFFF, -15px 4px 30px #0052A5, -12.5px 4px 70px #E0162B, -12px 5px 2px #FFFFFF, -18px 5px 30px #0052A5, -15px 5px 70px #E0162B, -14px 6px 2px #FFFFFF, -21px 6px 30px #0052A5, -17.5px 6px 70px #E0162B, -16px 7px 2px #FFFFFF, -24px 7px 30px #0052A5, -20px 7px 70px #E0162B, -18px 8px 2px #FFFFFF, -27px 8px 30px #0052A5, -22.5px 8px 70px #E0162B, -20px 9px 2px #FFFFFF, -30px 9px 30px #0052A5, -25px 9px 70px #E0162B, -22px 10px 2px #FFFFFF, -33px 10px 30px #0052A5, -27.5px 10px 70px #E0162B;
+  // text-shadow: -2px 0px 2px #FFFFFF, -3px 0px 30px #0052A5, -2.5px 0px 70px #E0162B, -4px 1px 2px #FFFFFF, -6px 1px 30px #0052A5, -5px 1px 70px #E0162B, -6px 2px 2px #FFFFFF, -9px 2px 30px #0052A5, -7.5px 2px 70px #E0162B, -8px 3px 2px #FFFFFF, -12px 3px 30px #0052A5, -10px 3px 70px #E0162B, -10px 4px 2px #FFFFFF, -15px 4px 30px #0052A5, -12.5px 4px 70px #E0162B, -12px 5px 2px #FFFFFF, -18px 5px 30px #0052A5, -15px 5px 70px #E0162B, -14px 6px 2px #FFFFFF, -21px 6px 30px #0052A5, -17.5px 6px 70px #E0162B, -16px 7px 2px #FFFFFF, -24px 7px 30px #0052A5, -20px 7px 70px #E0162B, -18px 8px 2px #FFFFFF, -27px 8px 30px #0052A5, -22.5px 8px 70px #E0162B, -20px 9px 2px #FFFFFF, -30px 9px 30px #0052A5, -25px 9px 70px #E0162B, -22px 10px 2px #FFFFFF, -33px 10px 30px #0052A5, -27.5px 10px 70px #E0162B;
   line-spacing: 20%;
   text-align: center;
   margin-right: auto;
+  margin-top: 5%;
 }
 
 .carrot {
@@ -29,18 +30,20 @@ body {
   text-transform: lowercase;
   color: black;
   text-shadow: none;
+  vertical-align: super;
+  font-size: smaller;
 }
 
-.not {
-  text-align: center;
-  margin-right: 4%;
-  font-size: 4.8vw;
-  font-family: $selectFont;
-  color: black;
-  text-shadow: none;
-  line-height: 30%;
-  padding: 4vw 0 0 0;
-}
+// .not {
+//   margin-left: 21vw;
+//   margin-right: 4%;
+//   font-size: 4.8vw;
+//   font-family: $selectFont;
+//   color: black;
+//   text-shadow: none;
+//   line-height: 30%;
+//   padding: 4vw 0 0 0;
+// }
 
 .heads img{
   text-align: center;
@@ -63,10 +66,15 @@ body {
   padding-left: 2%;
 }
 
+
 .subtext{
-  text-align: left;
-  font-family: $baseFont;
-  font-size: 1.5vw;
+  margin: 1% 7% 0 20%;
+  text-align: right;
+  font-family: "Quicksand";
+  font-size: 1vw;
+  padding: .5% 2% 1% 2%;
+  border-right: 10px solid black;
+  font-style: italic;
 }
 
 .a-blog{
@@ -95,10 +103,11 @@ body {
 }
 
 .tags{
-  text-align: center;
+  text-align: left;
   font-family: $selectFont;
-  font-size: 5vw;
-  padding-top: 2vw;
+  font-size: 4vw;
+  padding-top: 4vw;
+  margin-left: 7%;
 }
 
 .tag{

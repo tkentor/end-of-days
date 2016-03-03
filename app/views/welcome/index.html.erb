@@ -1,21 +1,19 @@
 <div class="row">
-  <div class="col-8"></div>
-  <div class="col-8 homepage">
-    <div class="not">
-      not
-    </div>
+  <div class="homepage">
+
     <div class="name">
-      it's<span class="carrot">^</span> the end of days.
+      it's<span class="carrot"> [not] </span> the end of days.*
     </div></div>
-        <div class="col-8"></div>
-      </div>
+  </div>
 
           <div class="subtext">
 
-It's Not the End of Days is a non-partisan blog that seeks to expose and counteract the fear-mongering, hyperbole, and waning interest in factual integrity that has become commonplace in our country. A wise man once said, "the only thing we have to fear is fear itself," although it seems the past 83 years since that famous address have taught us little. Click around, take a deep breath, and remember: the world isn't ending. It's not the end of days.
+*It's Not the End of Days is a non-partisan blog that seeks to expose and counteract the fear-mongering, hyperbole, and waning interest in factual integrity that has become commonplace in our country.
 
 
         </div>
+
+            <div class="instructions">click a <span>[post]</span> to read more. click a <span>[face]</span> to explore.</div>
 
 </div>
 
@@ -24,9 +22,8 @@ It's Not the End of Days is a non-partisan blog that seeks to expose and counter
 
 
 
-
-    <div class="tags">from the web</div>
-    <div class="instructions">click a <span>[post]</span> to read more. click a <span>[face]</span> to explore.</div>
+<br>
+    <div class="tags">from the web:</div>
 
     <% @stories.each do |story| %>
     <div class="article-story" id="<%= "story#{story.id}" %>">
@@ -78,10 +75,9 @@ It's Not the End of Days is a non-partisan blog that seeks to expose and counter
 
 
 
-<div class="tags">original content</div>
+<div class="tags">original content:</div>
 <!-- <div class="dice"><img src="http://i.imgur.com/MJWQQz8.png" id="dice-pic"></div> -->
   <!-- <div class="quote"></div> -->
-<div class="instructions">click a <span> [ post ] </span> to read more. click a <span> [ face ] </span> to explore.</div>
 
 
 <div class="row">

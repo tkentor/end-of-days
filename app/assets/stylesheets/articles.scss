@@ -1,4 +1,4 @@
-$baseFont: "Open Sans";
+$baseFont: "Quicksand";
 $selectFont: "Special Elite";
 
 .article{
@@ -7,7 +7,7 @@ $selectFont: "Special Elite";
   background-color: #F2F2F2;
   padding: .5% 2% 1% 2%;
   font-family: $baseFont;
-  margin: 6% 7% 10% 7%;
+  margin: 2% 7% 12% 7%;
   border-left: 5px solid black;
   cursor: pointer;
 }
@@ -19,7 +19,7 @@ $selectFont: "Special Elite";
   color: black;
   // border-top: 3px solid black;
   // border-left: 5px solid black;
-  margin: 0 25%;
+  margin: 3% 7% 0 7%;
   font-size: 1rem;
 }
 
@@ -33,7 +33,7 @@ $selectFont: "Special Elite";
 .article-image img{
   border-right: 30px solid black;
   font-family: $baseFont;
-  margin: 5% 7% 5% 5%;
+  margin: 2% 7% 5% 5%;
   padding-left: 2%;
   cursor: pointer;
   width: 85%;
