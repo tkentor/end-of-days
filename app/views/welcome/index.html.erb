@@ -1,3 +1,4 @@
+<div class="row"><div class="col-16">
 <div class="row">
   <div class="homepage">
 
@@ -6,16 +7,38 @@
     </div></div>
   </div><br>
 
-          <div class="subtext">
+  <div class="subtext">
 
-*It's Not the End of Days is a news blog dedicated to exposing the fear-mongering, hyperbole, and lack of factual integrity that has become commonplace in our country. Content is a mix of curated news and original posts.
+    *It's Not the End of Days is a news blog dedicated to exposing the fear-mongering, hyperbole, and waning interest in factual integrity that has swept through our nation. It's non-partisan commentary on our country's political rhetoric and tone: a discussion of the discussion (if you will). Content is a mix of curated news and original posts.
 
 
-        </div>
+  </div>
 
-            <div class="instructions">click a <span>[post]</span> to read more. click a <span>[face]</span> to explore.</div><br>
+  <div class="instructions">click a <span>[post]</span> to read more. click a <span>[face]</span> to explore.</div><br>
+
+</div><div class="head-stack">
+  <div class="col-2">
+    <a href="/pictures/2"><img src="http://i.imgur.com/ZIFXVMh.png"></a>
+    <a href="/pictures/7"><img src="http://i.imgur.com/EmpX2a0.png"></a>
+    <a href="/pictures/8"><img src="http://i.imgur.com/iJ6pRJR.png"></a>
+    <a href="/pictures/9"><img src="http://i.imgur.com/p2FSYaq.png"></a>
+</div>
+<div class="col-2">
+    <a href="/pictures/5"><img src="http://i.imgur.com/3fPznJm.png"></a>
+    <a href="/pictures/10"><img src="http://i.imgur.com/FiP6H6p.png"></a>
+    <a href="/pictures/10"><img src="http://i.imgur.com/XvU5GO3.png"></a>
+    <a href="/pictures/13"><img src="http://i.imgur.com/vEwNrHr.png"></a>
+  </div>
+</div>
 
 </div>
+
+
+
+</div>
+
+
+
 
 
 
@@ -24,22 +47,22 @@
 
 <br>
 
-    <% @stories.each do |story| %>
-    <div class="article-story" id="<%= "story#{story.id}" %>">
+<% @stories.each do |story| %>
+<div class="article-story" id="<%= "story#{story.id}" %>">
+  <p>
+    <div class="section body">
+      <div class="click">
+        [click to expand]</div>
+        <div class="time"><%= story.created_at.strftime("%B %d, %Y") %>
+        </div>
+      </div>
+      <div class="story-headline">
+        <%= story.title %>
+      </div>
+      <div class="from takeaway">
+        <strong>from</strong> <span class="story-source"><a href="<%= story.link %>" target="_blank"><%= story.source %>&nbsp</a></span></div>
+      </p>
       <p>
-        <div class="section body">
-          <div class="click">
-            [click to expand]</div>
-          <div class="time"><%= story.created_at.strftime("%B %d, %Y") %>
-          </div>
-        </div>
-        <div class="story-headline">
-          <%= story.title %>
-        </div>
-          <div class="from takeaway">
-            <strong>from</strong> <span class="story-source"><a href="<%= story.link %>" target="_blank"><%= story.source %>&nbsp</a></span></div>
-        </p>
-        <p>
         <div class="expand">
           <div class="section takeaway">
             <strong>Just give me an excerpt.</strong>
@@ -47,28 +70,28 @@
           <div class="body padding"><%= story.excerpt %>
           </div>
         </div>
-        </p>
-        <div class="expand">
-          <!-- <p>
-            <div class="section takeaway">
-              <strong>INTED's take:</strong>
-            </div>
-            <div class="body padding"><%= story.take %>
-            </div>
-            <p> -->
-              <div class="all-tags">
-                <% story.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %>
-              </div>
-            </div>
-              <div class="tag-picture">
-                <% story.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %>
-              </div>
-            </p>
+      </p>
+      <div class="expand">
+        <!-- <p>
+        <div class="section takeaway">
+        <strong>INTED's take:</strong>
+      </div>
+      <div class="body padding"><%= story.take %>
+    </div>
+    <p> -->
+    <div class="all-tags">
+      <% story.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %>
+    </div>
+  </div>
+  <div class="tag-picture">
+    <% story.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %>
+  </div>
+</p>
 
 
-          </div>
+</div>
 
-          <% end %><br><br>
+<% end %><br><br>
 
 <div class="more-news"><a href="/stories/">more news > </a></div><br><br>
 
@@ -77,102 +100,102 @@
 
 <div class="tags">opinion:</div>
 <!-- <div class="dice"><img src="http://i.imgur.com/MJWQQz8.png" id="dice-pic"></div> -->
-  <!-- <div class="quote"></div> -->
+<!-- <div class="quote"></div> -->
 
 
 <div class="row">
 
-<% @articles.each do |article| %>
-<div class="article-container">
-<div class="article-image"><div id="<%= "article#{article.id}" %>"><%= image_tag("#{article.hero}") %></div></div>
-<div class="article behind-image" id="<%= "article#{article.id}" %>">
-  <p>
-    <div class="section body">
-      <div class="click">
-        [click to expand]</div>
-      <div class="time"><%= article.created_at.strftime("%B %d, %Y") %>
-      </div>
-      <div class="expand">
-        <strong>What's your point?</strong>
-      </div>
-    </div>
-      <div class="title">
-        <%= article.title %>
-      </div>
-    </p>
-    <div class="expand">
+  <% @articles.each do |article| %>
+  <div class="article-container">
+    <div class="article-image"><div id="<%= "article#{article.id}" %>"><%= image_tag("#{article.hero}") %></div></div>
+    <div class="article behind-image" id="<%= "article#{article.id}" %>">
       <p>
         <div class="section body">
-          <strong>How do you know?</strong>
+          <div class="click">
+            [click to expand]</div>
+            <div class="time"><%= article.created_at.strftime("%B %d, %Y") %>
+            </div>
+            <div class="expand">
+              <strong>What's your point?</strong>
+            </div>
+          </div>
+          <div class="title">
+            <%= article.title %>
+          </div>
+        </p>
+        <div class="expand">
+          <p>
+            <div class="section body">
+              <strong>How do you know?</strong>
+            </div>
+            <div class="body padding"><%= article.body %></div>
+          </p>
         </div>
-        <div class="body padding"><%= article.body %></div>
-      </p>
-    </div>
-    <p>
-      <div class="section takeaway">
-        <strong>If I only take one thing away...</strong>
-      </div>
-      <div class="takeaway padding"><%= article.takeaway %>
-      </div>
-    </p>
-    <div class="expand">
-      <!-- <p>
-        <div class="section action">
+        <p>
+          <div class="section takeaway">
+            <strong>If I only take one thing away...</strong>
+          </div>
+          <div class="takeaway padding"><%= article.takeaway %>
+          </div>
+        </p>
+        <div class="expand">
+          <!-- <p>
+          <div class="section action">
           <strong>So what can we do about it?</strong>
         </div>
         <div class="action padding">
-          <%= article.action %>
-        </div>
-      </p> -->
-      <p>
-        <div class="section sources">
-          <strong>Give me more to read.</strong>
-        </div>
-        <div class="sources padding">
-          <%= article.sources %>
-        </div>
-      </p>
-      <p>
-        <div class="all-tags">
-          <% article.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %>
-        </div>
+        <%= article.action %>
       </div>
-        <div class="tag-picture">
-          <% article.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %>
-        </div>
-      </p>
+    </p> -->
+    <p>
+      <div class="section sources">
+        <strong>Give me more to read.</strong>
+      </div>
+      <div class="sources padding">
+        <%= article.sources %>
+      </div>
+    </p>
+    <p>
+      <div class="all-tags">
+        <% article.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %>
+      </div>
     </div>
-
-  </div>
+    <div class="tag-picture">
+      <% article.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %>
+    </div>
+  </p>
+</div>
 
 </div>
 
-    <% end %>
+</div>
+
+<% end %>
 
 
 
 
 
-    <br><br>
+<br><br>
 
-    <div class="more-opinion"><a href="/stories/">more opinion > </a></div><br><br>
-
-
+<div class="more-opinion"><a href="/stories/">more opinion > </a></div><br><br>
 
 
 
 
 
 
-  <% if current_user %>
-  <div class="admin">
-    <%= link_to 'signout', destroy_user_session_path, :method => :delete %>
-  </div>
-  <% else %>
-  <div class="admin">
-    <%= link_to 'Signup', new_user_registration_path %>
-  </div>
-  <div class="admin">
-    <%= link_to 'admin', new_user_session_path %>
-  </div>
-  <% end %>
+
+
+<% if current_user %>
+<div class="admin">
+  <%= link_to 'signout', destroy_user_session_path, :method => :delete %>
+</div>
+<% else %>
+<div class="admin">
+  <%= link_to 'Signup', new_user_registration_path %>
+</div>
+<div class="admin">
+  <%= link_to 'admin', new_user_session_path %>
+</div>
+<% end %>

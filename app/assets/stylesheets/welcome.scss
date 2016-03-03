@@ -12,7 +12,7 @@ body {
 }
 
 .name {
-  text-align: center;
+  text-align: right;
   color: black;
   text-transform: uppercase;
   font-family: "Quicksand";
@@ -20,8 +20,7 @@ body {
   letter-spacing: .075em;
   // text-shadow: -2px 0px 2px #FFFFFF, -3px 0px 30px #0052A5, -2.5px 0px 70px #E0162B, -4px 1px 2px #FFFFFF, -6px 1px 30px #0052A5, -5px 1px 70px #E0162B, -6px 2px 2px #FFFFFF, -9px 2px 30px #0052A5, -7.5px 2px 70px #E0162B, -8px 3px 2px #FFFFFF, -12px 3px 30px #0052A5, -10px 3px 70px #E0162B, -10px 4px 2px #FFFFFF, -15px 4px 30px #0052A5, -12.5px 4px 70px #E0162B, -12px 5px 2px #FFFFFF, -18px 5px 30px #0052A5, -15px 5px 70px #E0162B, -14px 6px 2px #FFFFFF, -21px 6px 30px #0052A5, -17.5px 6px 70px #E0162B, -16px 7px 2px #FFFFFF, -24px 7px 30px #0052A5, -20px 7px 70px #E0162B, -18px 8px 2px #FFFFFF, -27px 8px 30px #0052A5, -22.5px 8px 70px #E0162B, -20px 9px 2px #FFFFFF, -30px 9px 30px #0052A5, -25px 9px 70px #E0162B, -22px 10px 2px #FFFFFF, -33px 10px 30px #0052A5, -27.5px 10px 70px #E0162B;
   line-spacing: 20%;
-  text-align: center;
-  margin: 5% 7% 0 7%;
+  margin: 0 10% 0 7%;
   max-width: 85%;
 }
 
@@ -67,13 +66,12 @@ body {
 
 
 .subtext{
-  margin: 1% 25% 0 20%;
+  margin: 1% 10% 0 20%;
   text-align: right;
   font-family: "Quicksand";
   font-size: 1vw;
   padding: .5% 2% 1% 2%;
   border-right: 5px solid black;
-  font-style: italic;
 }
 
 .a-blog{
@@ -149,6 +147,14 @@ body {
   font-family: "Quicksand";
   padding: 1%;
   text-decoration: none;
+}
+
+.head-stack{
+  margin: 5%;
+}
+
+.head-stack img{
+  width: 100%;
 }
 
 @media (max-width: 700px){
