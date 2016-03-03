@@ -1,6 +1,6 @@
 class WelcomeController < ApplicationController
   def index
-    @articles = Article.order('created_at DESC')
+    @articles = Article.limit(2).order('created_at DESC')
     @stories = Story.limit(2).order('created_at DESC')
   end
 

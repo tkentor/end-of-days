@@ -1,4 +1,4 @@
-$baseFont: "Quicksand";
+$baseFont: "Open Sans";
 $selectFont: "Special Elite";
 
 body {
@@ -124,6 +124,34 @@ body {
 
 .breakdown{
   font-size: 1vw;
+}
+
+.more-news a{
+  font-style: italic;
+  text-align: center;
+  background: #7171C6;
+  color: white;
+  box-shadow: 2px 2px 1px #888888;
+  margin: 0 7% 0 70%;
+  width: 20%;
+  font-size: 2.5vw;
+  font-family: $selectFont;
+  padding: 1.5%;
+  text-decoration: none;
+}
+
+.more-opinion a{
+  font-style: italic;
+  text-align: center;
+  background: #7171C6;
+  color: white;
+  box-shadow: 2px 2px 1px #888888;
+  margin: 0 7% 0 65%;
+  width: 20%;
+  font-size: 2.5vw;
+  font-family: $selectFont;
+  padding: 1.5%;
+  text-decoration: none;
 }
 
 @media (max-width: 700px){
