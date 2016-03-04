@@ -74,8 +74,12 @@ body {
   border-right: 5px solid black;
 }
 
-.subtext span{
+.subtext-info span{
   font-style: italic;
+}
+
+.subtext-special span{
+  font-family: $selectFont;
 }
 
 .a-blog{
