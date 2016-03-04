@@ -158,6 +158,23 @@ body {
   margin-bottom: 20%;
 }
 
+.icon-hover span{
+    color: black;
+    background-color: rgba(255,255,255,.9);
+    font-size: 2vw;
+    letter-spacing: 1px;
+    padding: .6%;
+    position: absolute;
+    text-align: center;
+    font-family: $selectFont;
+    display:none;
+    float: right;
+}
+
+.icon-hover:hover span{
+    display:block;
+}
+
 @media (max-width: 700px){
   body{
     padding-left: 0px;
