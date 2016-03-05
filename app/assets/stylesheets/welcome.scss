@@ -203,14 +203,13 @@ body {
   background: white;
   display:block;
   box-shadow: 1px 1px 1px #F2F2F2;
+  margin-top: 2vw;
 }
 
 .icon-hover:hover span{
   box-shadow: 1px 1px 1px #474747;
-}
-
-.icon-hover:hover span{
-    display:block;
+  display:block;
+  margin-top: 2vw;
 }
 
 @media (max-width: 700px){

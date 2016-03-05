@@ -46,14 +46,16 @@ $(document).ready(function(){
     $('.quote').text( randno );
   });
 
-  $(function () { $('.icon-hover').click(function (e) {  $(this).toggleClass('jiggle');  
-  return false; 
-});
-});
-
-$(function () { $('.icon-hover-flipped').click(function (e) {  $(this).toggleClass('jiggle');  
-return false; 
-});
-});
+//   $(function(){
+//     $('.icon-hover').click(function (e) {
+//     $(this).toggleClass('jiggle');  
+//     return false; 
+//     });
+//   });
+//
+// $(function () { $('.icon-hover-flipped').click(function (e) {  $(this).toggleClass('jiggle');  
+// return false; 
+// });
+// });
 
 });

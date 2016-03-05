@@ -14,7 +14,7 @@
  *= require_self
  */
 
- .icon-hover img{
+ .jiggle img{
      -webkit-animation: jiggle 1s infinite;
      -moz-animation-duration: 1s;
      -moz-animation-name: jiggle;
@@ -25,14 +25,13 @@
      position: relative;
  }
 
- .icon-hover-flipped img {
+ .tag-picture img{
      -webkit-animation: jiggle 1s infinite;
      -moz-animation-duration: 1s;
      -moz-animation-name: jiggle;
      -moz-animation-iteration-count: infinite;
      -webkit-transform: rotate(-2deg);
      -moz-transform: rotate(-2deg);
-     z-index: -1;
      position: relative;
  }
 
