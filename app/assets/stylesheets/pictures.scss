@@ -1,0 +1,16 @@
+$baseFont: "Quicksand";
+$selectFont: "Special Elite";
+
+.rating-name{
+  font-family: $selectFont;
+  margin-top: 7vw;
+  font-size: 3vw;
+  text-align: right;
+}
+
+.rating-description{
+  font-family: $baseFont;
+  font-size: 2vw;
+  text-align: left;
+  margin-top: 3vw;
+}

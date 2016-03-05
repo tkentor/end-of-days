@@ -6,4 +6,8 @@ class PicturesController < ApplicationController
     @stories = @picture.stories.order('created_at DESC')
   end
 
+  def user_params
+    params.require(:picture).permit(:description, :rating)
+  end
+
 end

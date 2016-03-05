@@ -14,6 +14,7 @@
  *= require_self
  */
 
+
  .jiggle img{
      -webkit-animation: jiggle 1s infinite;
      -moz-animation-duration: 1s;

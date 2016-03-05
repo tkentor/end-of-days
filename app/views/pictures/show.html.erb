@@ -1,4 +1,14 @@
-<div class="picture-page"><%= image_tag @picture.link %></div>
+<div class="row">
+  <div class="col-7">
+    <div class="rating-name"><%= @picture.rating %></div>
+  </div>
+  <div class="col-9">
+    <div class="picture-page"><%= image_tag @picture.link %></div>
+  </div>
+  <div class="col-7">
+    <div class="rating-description"><%= @picture.description %></div>
+  </div>
+</div>
 
 <% @articles.each do |article| %>
 <div class="article" id="<%= "article#{article.id}" %>">
