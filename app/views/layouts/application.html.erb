@@ -24,13 +24,26 @@
       <div class="col-1"></div>
     <div class="navbar-right col-3"><%= link_to 'opinion', articles_path %></div>
     <div class="col-1"></div>
-    <div class="navbar-right col-3"><%= link_to 'news', stories_path %></div>
+    <div class="dropdown col-3">
+      <span class="topics">
+        <%= link_to 'news', stories_path %> +</span>
+        <div class="dropdown-content">
+          <%= link_to 'all', stories_path %></span>
+          <a href="/tags/6">the election</a>
+          <a href="/tags/22">crime</a>
+          <a href="/tags/10">immigration</a>
+          <a href="/tags/9">healthcare</a>
+          <a href="/tags/2">terrorism</a>
+        </div>
+      </div>
+
+
     <div class="col-1"></div>
     <div class="navbar-right col-3"><a href='/policy'>policy</a></span></div>
     <div class="col-1"></div>
     <div class="dropdown col-3">
       <span class="topics">
-        <a href='/ratings'>ratings &#9662</a></span>
+        <a href='/ratings'>ratings +</a></span>
         <div class="dropdown-content">
           <a href="/pictures/7">mongering</a>
           <a href="/pictures/8">hyperbolic</a>
