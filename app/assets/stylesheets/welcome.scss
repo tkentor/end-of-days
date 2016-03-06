@@ -119,7 +119,12 @@ body {
   text-align: left;
   font-family: $selectFont;
   font-size: 4vw;
-  margin-left: 7%;
+  margin: 5% 7%;
+  text-align: right;
+}
+
+.blog-none{
+  display: none;
 }
 
 .tag{

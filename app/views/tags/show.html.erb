@@ -1,5 +1,6 @@
-<div class="tags"><%= @tag.name %></div>
+<div class="tags">[ <%= @tag.name %> ]</div>
 
+<div class="blog-none">
 <% @articles.each do |article| %>
 <div class="article" id="<%= "article#{article.id}" %>">
   <p>
@@ -67,6 +68,7 @@
         data: { confirm: 'Are you sure?' } %>
       </div>
     </div>
+  </div>
 
     <% @stories.each do |story| %>
     <div class="article-story" id="<%= "story#{story.id}" %>">
