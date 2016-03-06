@@ -9,9 +9,9 @@ $selectFont: "Special Elite";
 .coming-soon{
   font-family: $baseFont;
   font-size: 5vw;
-  text-align: right;
+  text-align: left;
   color: black;
-  margin: 15% 26% 0 25%;
+  margin: 44% 26% 0 0;
 }
 
 .what{
@@ -19,12 +19,13 @@ $selectFont: "Special Elite";
   cursor: pointer;
   text-align: left;
   font-size: 1.5vw;
-  margin: 0 25% 0 27%;
+  margin: 0 25% 0 3%;
   border-left: 5px solid black;
   padding: .5% 2% 1% 2%;
 }
 
 .policy-page img{
-  width: 30%;
-  margin: 10% 35% 30% 35%;
+  width: 50%;
+  margin: 40% 35% 30% 35%;
+  opacity: .3;
 }
