@@ -26,9 +26,9 @@
     <div class="col-1"></div>
     <div class="dropdown col-3">
       <span class="topics">
-        <%= link_to 'news', stories_path %> +</span>
+        <%= link_to 'news', stories_path %> [+]</span>
         <div class="dropdown-content">
-          <%= link_to 'all', stories_path %></span>
+          <span class="dropdown-blue"><%= link_to 'all', stories_path %></span>
           <a href="/tags/6">the election</a>
           <a href="/tags/22">crime</a>
           <a href="/tags/10">immigration</a>
@@ -43,7 +43,7 @@
     <div class="col-1"></div>
     <div class="dropdown col-3">
       <span class="topics">
-        <a href='/ratings'>ratings +</a></span>
+        <a href='/ratings'>ratings [+]</a></span>
         <div class="dropdown-content">
           <a href="/pictures/7">mongering</a>
           <a href="/pictures/8">hyperbolic</a>
@@ -51,8 +51,8 @@
           <a href="/pictures/18">divisive</a>
           <a href="/pictures/17">out of touch</a>
           <a href="/pictures/20">inflammatory</a>
-          <a href="/pictures/28">good reporting!</a>
-          <a href="/pictures/29">good for America!</a>
+          <span class="dropdown-blue"><a href="/pictures/28">good reporting!</a>
+          <a href="/pictures/29">good for America!</a></span>
         </div>
       </div>
 <!--

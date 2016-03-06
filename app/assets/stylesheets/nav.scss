@@ -43,6 +43,10 @@ $selectFont: "Special Elite";
   border: 5px solid black;
 }
 
+.dropdown-blue a:hover {
+  background-color: #7171C6;
+}
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
