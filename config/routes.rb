@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get '/about', to: 'welcome#about'
   get '/ratings', to: 'welcome#ratings'
   get '/show', to: 'welcome#show'
+  get '/policy', to: 'welcome#policy'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

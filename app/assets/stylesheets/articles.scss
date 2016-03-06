@@ -1,9 +1,15 @@
 $baseFont: "Quicksand";
 $selectFont: "Special Elite";
 
+.policy{
+    position: relative;
+    float:right;
+    margin-right: -5%;
+    font-size: 2vw;
+    color: #CD3700
+}
+
 .article{
-  // background: rgb(255,255,255);
-  // background-image: url(http://i.imgur.com/lDznMxt.png);
   background-color: #F7F7F7;
   padding: .5% 2% 1% 2%;
   font-family: $baseFont;
