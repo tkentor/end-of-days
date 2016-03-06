@@ -1,0 +1,30 @@
+// Place all the styles related to the policy controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+$baseFont: "Quicksand";
+$selectFont: "Special Elite";
+
+.coming-soon{
+  font-family: $baseFont;
+  font-size: 5vw;
+  text-align: right;
+  color: black;
+  margin: 15% 26% 0 25%;
+}
+
+.what{
+  font-family: $baseFont;
+  cursor: pointer;
+  text-align: left;
+  font-size: 1.5vw;
+  margin: 0 25% 0 27%;
+  border-left: 5px solid black;
+  padding: .5% 2% 1% 2%;
+}
+
+.policy-page img{
+  width: 30%;
+  margin: 10% 35% 30% 35%;
+}

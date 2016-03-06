@@ -38,7 +38,7 @@ $(document).ready(function(){
 
   $("img[src='']").remove();
 
-  $(".policy").append("&#9733<br>&#9733<br> &#9733");
+  // $(".policy").append("&#9733<br>&#9733<br> &#9733");
 
   // var quotes = new Array("welcome to my snoop bloggy blog.", "get rich or die blogging.", "bloggy style. bla-bla-bloggy style.", "eat. read. repeat.", "it's a blog off.", "bloggers too can't not die in a freak gasoline fight accident.", "the blogs are in the computer.", "blog. james blog.", "rule #76: no excuses. blog like a champion.","if you don't know, now you know.", "like a deep breath, in news form.", "saving the world, one unread blog post at a time.", "content delivered on time, or it's free!", "ALL LIES MATTER."),
   // randno = quotes[Math.floor( Math.random() * quotes.length )];
