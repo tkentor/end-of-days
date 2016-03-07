@@ -21,8 +21,6 @@
     <div class="navbar-left col-3">
       <%= link_to "home", welcome_index_path %>
     </div>
-      <div class="col-1"></div>
-    <div class="navbar-right col-3"><%= link_to 'opinion', articles_path %></div>
     <div class="col-1"></div>
     <div class="dropdown col-3">
       <span class="topics">
@@ -31,56 +29,59 @@
           <span class="dropdown-blue"><%= link_to 'all', stories_path %></span>
           <a href="/tags/6">the election</a>
           <a href="/tags/22">crime</a>
-          <a href="/tags/25">LGBT</a>          
+          <a href="/tags/25">LGBT</a>
           <a href="/tags/10">immigration</a>
           <a href="/tags/2">terrorism</a>
         </div>
       </div>
 
 
-    <div class="col-1"></div>
-    <div class="navbar-right col-3"><a href='/policy'>policy</a></span></div>
-    <div class="col-1"></div>
-    <div class="dropdown col-3">
-      <span class="topics">
-        <a href='/ratings'>ratings [+]</a></span>
-        <div class="dropdown-content">
-          <a href="/pictures/7">mongering</a>
-          <a href="/pictures/8">hyperbolic</a>
-          <a href="/pictures/9">dishonest</a>
-          <a href="/pictures/18">divisive</a>
-          <a href="/pictures/17">out of touch</a>
-          <a href="/pictures/20">inflammatory</a>
-          <span class="dropdown-blue"><a href="/pictures/28">good reporting!</a>
-          <a href="/pictures/29">good for America!</a></span>
-        </div>
-      </div>
-<!--
+      <div class="col-1"></div>
       <div class="dropdown col-3">
-        <div class="navbar-topics"><span class="topics">
+        <span class="topics">
+          <a href='/ratings'>ratings [+]</a></span>
+          <div class="dropdown-content">
+            <a href="/pictures/7">mongering</a>
+            <a href="/pictures/8">hyperbolic</a>
+            <a href="/pictures/9">dishonest</a>
+            <a href="/pictures/18">divisive</a>
+            <a href="/pictures/17">out of touch</a>
+            <a href="/pictures/20">inflammatory</a>
+            <span class="dropdown-blue"><a href="/pictures/28">good reporting!</a>
+              <a href="/pictures/29">good for America!</a></span>
+            </div>
+          </div>
+          <!--
+          <div class="dropdown col-3">
+          <div class="navbar-topics"><span class="topics">
           topics</span>
         </div>
         <div class="dropdown-content">
-          <a href="/tags/6">the election</a>
-          <a href="/tags/7">guns</a>
-          <a href="/tags/2">terrorism</a>
-          <a href="/tags/8">climate</a>
-          <a href="/tags/9">healthcare</a>
-          <a href="/tags/10">immigration</a>
-          <a href="/tags/11">criminal justice</a>
-        </div>
-      </div> -->
+        <a href="/tags/6">the election</a>
+        <a href="/tags/7">guns</a>
+        <a href="/tags/2">terrorism</a>
+        <a href="/tags/8">climate</a>
+        <a href="/tags/9">healthcare</a>
+        <a href="/tags/10">immigration</a>
+        <a href="/tags/11">criminal justice</a>
+      </div>
+    </div> -->
+    <div class="col-1"></div>
+    <div class="navbar-right col-3"><%= link_to 'opinion', articles_path %></div>
+    
+    <div class="col-1"></div>
+    <div class="navbar-right col-3"><a href='/policy'>policy</a></span></div>
 
     <div class="col-2"></div>
 
-      <div class="navbar-right dbaf col-1">
-        <a href="http://dontbeafarmer.com" target="_blank">*</a>
-      </div>
-
-
-
-
+    <div class="navbar-right dbaf col-1">
+      <a href="http://dontbeafarmer.com" target="_blank">*</a>
     </div>
-    <%= yield %>
-  </body>
-  </html>
+
+
+
+
+  </div>
+  <%= yield %>
+</body>
+</html>
