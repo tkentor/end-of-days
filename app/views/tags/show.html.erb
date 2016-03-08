@@ -4,7 +4,6 @@
 
   <% @articles.each do |article| %>
   <div class="article-container">
-  <div class="article-image"><div id="<%= "article#{article.id}" %>"><%= image_tag("#{article.hero}") %></div></div>
   <div class="article behind-image" id="<%= "article#{article.id}" %>">
     <p>
       <div class="section">

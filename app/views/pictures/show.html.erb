@@ -8,13 +8,12 @@
   <div class="col-8">
     <div class="rating-description"><%= @picture.description %></div>
   </div>
-</div>
+</div><br>
 
 
 
 <% @articles.each do |article| %>
 <div class="article-container">
-<div class="article-image"><div id="<%= "article#{article.id}" %>"><%= image_tag("#{article.hero}") %></div></div>
 <div class="article behind-image" id="<%= "article#{article.id}" %>">
   <p>
     <div class="section">
