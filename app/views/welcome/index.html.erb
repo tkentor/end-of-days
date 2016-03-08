@@ -118,14 +118,6 @@
         <%= article.title %>
       </div>
     </p>
-    <div class="expand">
-      <p>
-        <div class="section">
-          <strong>How do you know?</strong>
-        </div>
-        <div class="body padding"><%= article.body_with_links.html_safe %></div>
-      </p>
-    </div>
     <p>
       <div class="section takeaway">
         <strong>If I only take one thing away...</strong>
@@ -134,22 +126,14 @@
       </div>
     </p>
     <div class="expand">
-      <!-- <p>
-        <div class="section action">
-          <strong>So what can we do about it?</strong>
+      <p>
+        <div class="section">
+          <strong>Hmm, go on...</strong>
         </div>
-        <div class="action padding">
-          <%= article.action %>
-        </div>
-      </p> -->
-      <!-- <p>
-        <! <div class="section sources">
-          <strong>Give me more to read.</strong>
-        </div> -->
-        <!-- <div class="sources padding">
-          <%= article.sources %>
-        </div> -->
-      <!-- </p> -->
+        <div class="body padding"><%= article.body_with_links.html_safe %></div>
+      </p>
+    </div>
+    <div class="expand">
       <p>
         <div class="all-tags">
           <% article.tags.each do |tag| %><span class="tag"> [ <%= link_to tag.name, tag %> ] </span> &nbsp &nbsp<% end %>
