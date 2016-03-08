@@ -16,13 +16,16 @@
 
 $(document).ready(function(){
 
+  $(this).find(".time-right").hide();
 
   $(".behind-image").hide();
 
   $(".article").click(function(){
-    $(this).find(".expand").toggle();
-    $(this).find(".click").toggle();
-    $(this).find(".time").toggleClass("time-right")
+    $(this).find(".expand").show();
+    $(this).find(".click").show();
+    $(this).find(".time").hide()
+    $(this).find(".time-right").show();
+    $(this).find(".click").hide();
   })
 
   $(".article-container").click(function(){

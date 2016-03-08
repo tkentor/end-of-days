@@ -106,7 +106,7 @@ class Article < ActiveRecord::Base
       end
       if content[i+1] == "]" && content[i+2] == "]"
         recording = false
-        link_array = link.split(",")
+        link_array = link.split(",,")
         link = ""
         label = link_array[0]
         url = link_array[1]
