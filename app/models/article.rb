@@ -46,4 +46,48 @@ class Article < ActiveRecord::Base
     end
   end
 
+# create method for having links appear in body text
+  def body_with_links
+    # method for having links appear in blog body. format is -- [[google, google.com]]
+    content = self.body
+    # variable "content" refers to the body from the rails form
+    link = ""
+    # variable "link" is an empty string
+    recording = false
+    # no need to record anything yet
+    content_array = []
+    # create empty array with name "content_array"
+    link_end_index = 0
+    # current index is 0
+    content.each_char.with_index do |chr, i|
+      # assign an index number to each character in the variable content
+      link += chr if recording == true
+      # add the characters to the link variable if recording
+      if chr == "[" && content[i-1] == "["
+        # if the character [ is reached, and the character with an index value +1 is also [,
+        content_array << content[(link_end_index)..(i-2)]
+        recording = true
+        # then start recording, and push everything before it into the content_array
+      end
+      if content[i+1] == "]" && content[i+2] == "]"
+        # if you reach the closing brackets,
+        recording = false
+        # then stop recording.
+        link_array = link.split(",")
+        # split what you recorded into two strings, separated at the comma
+        link = ""
+        label = link_array[0]
+        url = link_array[1]
+        # store the first half of what you recorded as variable label, and the second half as variable url
+        content_array << "<span class='blog-links'><a href='http://#{url.strip}' target='_blank'>#{label.strip}  <sup>&#10532</sup></a></span> "
+        # now put variables label and url into this html tag like so
+        link_end_index = i+3
+        # resume on the third characters after the link ended, because ]] are the first two
+      end
+    end
+      content_array << content[(link_end_index)..(-1)]
+      # push the rest of the body after the link into the content array
+      return content_array.join
+      # join all strings of the content array, again into one cohesive body text
+  end
 end
