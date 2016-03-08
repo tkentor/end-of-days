@@ -79,7 +79,7 @@ class Article < ActiveRecord::Base
         label = link_array[0]
         url = link_array[1]
         # store the first half of what you recorded as variable label, and the second half as variable url
-        content_array << "<span class='blog-links'><a href='http://#{url.strip}' target='_blank'>#{label.strip}  &#10532</a></span> "
+        content_array << "<span class='blog-links'><a href='https://#{url.strip}' target='_blank'>#{label.strip}  <span class='blog-links-blue'>&#10532</span></a></span> "
         # now put variables label and url into this html tag like so
         link_end_index = i+3
         # resume on the third characters after the link ended, because ]] are the first two
