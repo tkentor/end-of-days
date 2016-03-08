@@ -36,7 +36,7 @@ $(document).ready(function(){
   $(".article-story").click(function(){
     $(this).find(".expand").toggle();
     $(this).find(".click").toggle();
-    $(this).find(".time").toggleClass("time-right")
+    $(this).find(".time").toggleClass("time-right");
   })
 
   $("img[src='']").remove();
