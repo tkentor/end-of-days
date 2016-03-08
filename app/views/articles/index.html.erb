@@ -12,7 +12,7 @@
 <div class="article-image"><div id="<%= "article#{article.id}" %>"><%= image_tag("#{article.hero}") %></div></div>
 <div class="article behind-image" id="<%= "article#{article.id}" %>">
   <p>
-    <div class="section body">
+    <div class="section">
       <div class="click">
         [click to expand]</div>
       <div class="time"><%= article.created_at.strftime("%B %d, %Y") %>
@@ -41,14 +41,14 @@
       </div>
     </p>
     <div class="expand">
-      <p>
+      <!-- <p>
         <div class="section action">
           <strong>So what can we do about it?</strong>
         </div>
         <div class="action padding">
           <%= article.action %>
         </div>
-      </p>
+      </p> -->
       <!-- <p>
         <! <div class="section sources">
           <strong>Give me more to read.</strong>
@@ -59,7 +59,7 @@
       <!-- </p> -->
       <p>
         <div class="all-tags">
-          <% article.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %>
+          <% article.tags.each do |tag| %><span class="tag"> [ <%= link_to tag.name, tag %> ] </span> &nbsp &nbsp<% end %>
         </div>
       </div>
         <div class="tag-picture">

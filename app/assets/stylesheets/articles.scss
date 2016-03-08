@@ -57,6 +57,7 @@ $selectFont: "Special Elite";
  font-size: 1.1rem;
  line-height: 150%;
  font-family: arial;
+ padding: 0 1vw;
 }
 
 .takeaway{
@@ -104,7 +105,7 @@ $selectFont: "Special Elite";
 }
 
 .tag a{
-  color: #00688B;
+  color: black;
   font-family: $selectFont;
   text-decoration: none;
 }

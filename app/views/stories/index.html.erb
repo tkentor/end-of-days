@@ -2,7 +2,7 @@
 <% @stories.each do |story| %>
 <div class="article-story" id="<%= "story#{story.id}" %>">
   <p>
-    <div class="section body">
+    <div class="section">
       <div class="click">
         [click to expand]</div>
       <div class="time"><%= story.created_at.strftime("%B %d, %Y") %>
@@ -22,11 +22,11 @@
       <div class="body padding"><%= story.excerpt %>
       </div>
     </div>
-    </p>
+  </p><br>
     <div class="expand">
         <p>
           <div class="all-tags">
-            <% story.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %>
+            <% story.tags.each do |tag| %><span class="tag"> [ <%= link_to tag.name, tag %> ] </span> &nbsp &nbsp<% end %>
           </div>
         </div>
           <div class="tag-picture">

@@ -50,17 +50,17 @@
           <%= article.action %>
         </div>
       </p> -->
-      <p>
+      <!-- <p>
         <div class="section sources">
           <strong>Give me more to read.</strong>
         </div>
         <div class="sources padding">
           <%= article.sources %>
         </div>
-      </p>
+      </p> -->
       <p>
         <div class="all-tags">
-          <% article.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %>
+          <% article.tags.each do |tag| %><span class="tag"> [ <%= link_to tag.name, tag %> ] </span> &nbsp &nbsp<% end %>
         </div>
       </div>
         <div class="tag-picture">
@@ -111,7 +111,7 @@
             </div>
             <p> -->
               <div class="all-tags">
-                <% story.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %>
+                <% story.tags.each do |tag| %><span class="tag"> [ <%= link_to tag.name, tag %> ] </span> &nbsp &nbsp<% end %>
               </div>
             </div>
               <div class="tag-picture">

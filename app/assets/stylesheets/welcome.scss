@@ -129,11 +129,12 @@ body {
 }
 
 .tag{
-  color: #00688B;
+  color: black;
   font-family: $selectFont;
   text-decoration: none;
-  background-color: rgba(0,104,139,.2);
+  background-color: white;
   padding: .5%;
+  box-shadow: 2px 2px 1px #888888;
 }
 
 .all-tags{

@@ -51,7 +51,7 @@
 <% @stories.each do |story| %>
 <div class="article-story" id="<%= "story#{story.id}" %>">
   <p>
-    <div class="section body">
+    <div class="section">
       <div class="click">
         [click to expand]</div>
         <div class="time"><%= story.created_at.strftime("%B %d, %Y") %>
@@ -75,7 +75,7 @@
       <div class="expand">
     <p>
     <div class="all-tags">
-      <% story.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %>
+      <% story.tags.each do |tag| %><span class="tag"> [ <%= link_to tag.name, tag %> ] </span> &nbsp &nbsp<% end %>
     </div>
   </div>
   <div class="tag-picture">
@@ -105,7 +105,7 @@
 <div class="article-image"><div id="<%= "article#{article.id}" %>"><%= image_tag("#{article.hero}") %></div></div>
 <div class="article behind-image" id="<%= "article#{article.id}" %>">
   <p>
-    <div class="section body">
+    <div class="section">
       <div class="click">
         [click to expand]</div>
       <div class="time"><%= article.created_at.strftime("%B %d, %Y") %>
@@ -152,7 +152,7 @@
       <!-- </p> -->
       <p>
         <div class="all-tags">
-          <% article.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %>
+          <% article.tags.each do |tag| %><span class="tag"> [ <%= link_to tag.name, tag %> ] </span> &nbsp &nbsp<% end %>
         </div>
       </div>
         <div class="tag-picture">
