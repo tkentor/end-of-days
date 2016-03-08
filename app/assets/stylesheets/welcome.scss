@@ -66,12 +66,13 @@ body {
 
 
 .subtext{
-  margin: 1% 10% 0 20%;
+  margin: 1% 10% 0 23%;
   text-align: right;
-  font-family: "Quicksand";
+  font-family: "Source Sans Pro";
   font-size: 1.5vw;
   padding: .5% 2% 1% 2%;
   border-right: 5px solid black;
+  line-height: 150%;
 }
 
 .subtext span{
@@ -84,6 +85,7 @@ body {
 
 .contact{
   font-size: 1vw;
+  font-family: "Quicksand";
 }
 .contact a{
   font-weight: bold;
