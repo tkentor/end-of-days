@@ -47,19 +47,20 @@ $selectFont: "Special Elite";
 }
 
 .title{
-  font-size: 2rem;
+  font-size: 2.3rem;
   text-decoration: none;
   text-transform: uppercase;
   padding-top: 1%;
 }
 
 .body{
- font-size: 1.2rem;
- line-height: 160%;
+ font-size: 1.1rem;
+ line-height: 150%;
+ font-family: arial;
 }
 
 .takeaway{
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 160%;
 }
 
@@ -73,6 +74,7 @@ $selectFont: "Special Elite";
 
 .expand{
   display: none;
+  font-family: $selectFont;
 }
 
 .time{
