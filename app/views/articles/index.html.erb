@@ -37,7 +37,7 @@
       <div class="section takeaway">
         <strong>If I only take one thing away...</strong>
       </div>
-      <div class="body padding"><%= article.takeaway %>
+      <div class="body padding"><%= article.takeaway_with_links.html_safe %>
       </div>
     </p>
     <div class="expand">
@@ -50,9 +50,9 @@
         </div>
       </p> -->
       <p>
-        <div class="section sources">
+        <!-- <div class="section sources">
           <strong>Give me more to read.</strong>
-        </div>
+        </div> -->
         <div class="sources padding">
           <%= article.sources %>
         </div>

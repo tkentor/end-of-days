@@ -136,5 +136,32 @@ class Article < ActiveRecord::Base
       # join all strings of the content array, again into one cohesive body text
   end
 
+  def takeaway_with_links
+    content = self.takeaway
+    link = ""
+    recording = false
+    content_array = []
+    link_end_index = 0
+    content.each_char.with_index do |chr, i|
+      link += chr if recording == true
+      if chr == "[" && content[i-1] == "["
+        content_array << content[(link_end_index)..(i-2)]
+        recording = true
+      end
+      if content[i+1] == "]" && content[i+2] == "]"
+        recording = false
+        link_array = link.split(",")
+        link = ""
+        label = link_array[0]
+        url = link_array[1]
+        content_array << "<span class='blog-links'><a href='#{url.strip}' target='_blank'>#{label.strip}  <span class='blog-links-blue'>&#10532</span></a></span> "
+        link_end_index = i+3
+      end
+    end
+      content_array << content[(link_end_index)..(-1)]
+      return content_array.join
+  end
+
+
 
 end
