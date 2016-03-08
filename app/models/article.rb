@@ -73,7 +73,7 @@ class Article < ActiveRecord::Base
         # if you reach the closing brackets,
         recording = false
         # then stop recording.
-        link_array = link.split(",")
+        link_array = link.split(",,")
         # split what you recorded into two strings, separated at the comma
         link = ""
         # resets link to zero so it doesn't repeat
