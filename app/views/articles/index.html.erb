@@ -40,8 +40,8 @@
       <div class="body padding"><%= article.takeaway_with_links.html_safe %>
       </div>
     </p>
-    <div class="expand">
-      <!-- <p>
+    <!-- <div class="expand">
+      <! <p>
         <div class="section action">
           <strong>So what can we do about it?</strong>
         </div>
@@ -49,14 +49,14 @@
           <%= article.action %>
         </div>
       </p> -->
-      <p>
-        <!-- <div class="section sources">
+      <!-- <p>
+        <! <div class="section sources">
           <strong>Give me more to read.</strong>
         </div> -->
-        <div class="sources padding">
+        <!-- <div class="sources padding">
           <%= article.sources %>
-        </div>
-      </p>
+        </div> -->
+      <!-- </p> -->
       <p>
         <div class="all-tags">
           <% article.tags.each do |tag| %><span class="tag"><%= link_to tag.name, tag %></span> &nbsp &nbsp<% end %>
