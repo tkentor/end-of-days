@@ -40,6 +40,7 @@ $(document).ready(function(){
     $(this).find(".expand").show();
     $(this).find(".click").hide();
     $(this).find(".time").css("float", "right");
+    $(this).find(".time").css("margin-left", "5%");
   })
 
   $("img[src='']").remove();
