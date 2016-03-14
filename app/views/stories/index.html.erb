@@ -1,11 +1,11 @@
 <div class="tags">[ news ]</div>
 <% @stories.each do |story| %>
-<div class="article-story" >
+<div class="article-story" id="<%= "story#{story.id}" %>">
   <p>
     <div class="section">
       <div class="click">
         [click to expand]</div>
-        <div class="time"><%= story.created_at.strftime("%B %d, %Y") %></div>
+        <div class="time"><%= story.created_at.strftime("%B %d, %Y") %></div><br><br>
       </div>
       <div class="story-headline">
         <%= story.title %>
@@ -23,18 +23,15 @@
         </div>
       </p>
       <div class="expand">
-        <p>
-          <div class="all-tags">
-            <% story.tags.each do |tag| %><span class="tag"> [ <%= link_to tag.name, tag %> ] </span> &nbsp &nbsp<% end %>
-          </div>
-        </p>
-        </div>
-        <div class="tag-picture">
-          <% story.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %>
-        </div>
-
-
-</div>
+    <p>
+    <div class="all-tags">
+      <% story.tags.each do |tag| %><span class="tag"> [ <%= link_to tag.name, tag %> ] </span> &nbsp &nbsp<% end %>
+    </div>
+  </div>
+  <div class="tag-picture">
+    <% story.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %>
+  </div>
+</p>
 
 
 
