@@ -59,9 +59,12 @@ $links: #7171C6;
 
 .navbar-about{
 }
-
+//
 @media (max-width: 700px){
   .navbar-left a{
+    display: none;
+  }
+  .navbar-left{
     display: none;
   }
   .navbar-topics{
@@ -74,11 +77,11 @@ $links: #7171C6;
     display:none;
   }
 }
-
-@media (min-width: 1000px){
-
-}
-
-@media handheld {
-
-}
+//
+// @media (min-width: 1000px){
+//
+// }
+//
+// @media handheld {
+//
+// }

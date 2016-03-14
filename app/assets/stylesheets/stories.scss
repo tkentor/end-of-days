@@ -13,8 +13,12 @@ $links: #7171C6;
 }
 
 .story-headline{
-  font-size: 1.8rem;
+  font-size: 2.2vw;
   text-transform: uppercase;
+}
+
+#featured-story-headline{
+  text-align: center;
 }
 
 .story-source a{
@@ -47,4 +51,30 @@ $links: #7171C6;
   color: $notes;
   background: #FFEC8B;
   font-family: $selectFont;
+}
+
+#featured{
+  background-color: rgba(205,55,0,.15);
+  // padding: .5% 2% 1% 2%;
+  // font-family: $baseFont;
+  margin: 0 7% 10% 7%;
+  // cursor: pointer;
+  border-left: none;
+}
+
+#featured-tag-picture img{
+  // float: left;
+}
+
+// .image-container{
+//   text-align: center;
+// }
+
+#featured-story-source{
+  text-align: center;
+}
+
+#featured-tags{
+  margin: 5% 7% 0 7%;
+  font-size: 3vw;
 }

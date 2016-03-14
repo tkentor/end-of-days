@@ -2,6 +2,7 @@ class WelcomeController < ApplicationController
   def index
     @articles = Article.limit(1).order('created_at DESC')
     @stories = Story.limit(3).order('created_at DESC')
+    @featured = Story.find(58)
   end
 
   def about

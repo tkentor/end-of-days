@@ -25,7 +25,7 @@
     <div class="col-1"></div>
     <div class="dropdown col-3">
       <span class="topics">
-        <%= link_to 'news', stories_path %> [+]</span>
+        <%= link_to 'news', stories_path %><span class="navbar-left"> [+]</span></span>
         <div class="dropdown-content">
           <span class="dropdown-blue"><%= link_to 'all', stories_path %></span>
           <a href="/tags/6">the election</a>
@@ -41,7 +41,7 @@
       <div class="col-1"></div>
       <div class="dropdown col-3">
         <span class="topics">
-          <a href='/ratings'>ratings [+]</a></span>
+          <a href='/ratings'>ratings<span class="navbar-left"> [+]</span></a></span>
           <div class="dropdown-content">
             <a href="/pictures/7">mongering</a>
             <a href="/pictures/8">hyperbolic</a>
@@ -87,6 +87,6 @@
   <%= yield %>
 
   <div class="copyright">Copyright (c) 2015 Copyright Holder All Rights Reserved.</div>
-  
+
 </body>
 </html>
