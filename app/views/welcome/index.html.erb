@@ -122,113 +122,113 @@
             <% story.tags.each do |tag| %><span class="tag"> [ <%= link_to tag.name, tag %> ] </span> &nbsp &nbsp<% end %>
           </div>
         </p>
-        </div>
-        <div class="tag-picture">
-          <% story.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %>
-        </div>
+      </div>
+      <div class="tag-picture">
+        <% story.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %>
+      </div>
 
 
-</div>
+    </div>
 
     <% end %>
 
 
 
-  <br>
+    <br>
 
     <div class="article-story" id="featured">
-    <p>
-    <div class="section">
-      </div>
-      <div class="from takeaway" id="featured-story-source">
-        <strong>~ featured story from</strong> <span class="story-source" "><a href="<%= @featured.link %>" target="_blank"><%= @featured.source %>&nbsp</a></span><strong> ~</strong></div>
-      <div class="story-headline" id="featured-story-headline"><br>
-        <%= @featured.title %>
-      </div>
-      </p>
       <p>
-          <div class="body padding"><%= @featured.excerpt %>
+        <div class="section">
         </div>
-      </p>
-      <div class="expand">
-        <p>
-          <div class="all-tags">
-            <% @featured.tags.each do |tag| %><span class="tag"> [ <%= link_to tag.name, tag %> ] </span> &nbsp &nbsp<% end %>
+        <div class="from takeaway" id="featured-story-source">
+          <strong>~ featured story from</strong> <span class="story-source" "><a href="<%= @featured.link %>" target="_blank"><%= @featured.source %>&nbsp</a></span><strong> ~</strong></div>
+          <div class="story-headline" id="featured-story-headline"><br>
+            <%= @featured.title %>
           </div>
         </p>
+        <p>
+          <div class="body padding"><%= @featured.excerpt %>
+          </div>
+        </p>
+        <div class="expand">
+          <p>
+            <div class="all-tags">
+              <% @featured.tags.each do |tag| %><span class="tag"> [ <%= link_to tag.name, tag %> ] </span> &nbsp &nbsp<% end %>
+            </div>
+          </p>
         </div>
         <div class="tag-picture" id="featured-tag-picture">
           <% @featured.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %>
         </div>
 
 
-    </div>
+      </div>
 
 
-<br><br>
-
-
-
-
-
-
-
-    <div class="more-news"><a href="/stories/">more news > </a></div><br>
+      <br><br>
 
 
 
 
 
 
-    <br><br><br><br><span class="tags">[ original content ]</span>
-    <!-- <div class="dice"><img src="http://i.imgur.com/MJWQQz8.png" id="dice-pic"></div> -->
-    <!-- <div class="quote"></div> -->
+
+      <div class="more-news"><a href="/stories/">more news > </a></div><br>
 
 
-    <div class="row">
 
-      <% @articles.each do |article| %>
-      <div id="<%= "article#{article.id}" %>">
-        <div class="article" id="<%= "article#{article.id}" %>">
-          <p>
-            <div class="section">
-              <div class="click">
-                [click to expand]</div>
-                <div class="time"><%= article.created_at.strftime("%B %d, %Y") %></div>
-                <div class="time-right"><%= article.created_at.strftime("%B %d, %Y") %></div>
-                <div class="expand">
-                  <strong>What's your point?</strong>
-                </div>
-              </div>
-              <div class="title">
-                <%= article.title %>
-              </div>
-            </p>
+
+
+
+      <br><br><br><br><span class="tags">[ original content ]</span>
+      <!-- <div class="dice"><img src="http://i.imgur.com/MJWQQz8.png" id="dice-pic"></div> -->
+      <!-- <div class="quote"></div> -->
+
+
+      <div class="row">
+
+        <% @articles.each do |article| %>
+        <div id="<%= "article#{article.id}" %>">
+          <div class="article" id="<%= "article#{article.id}" %>">
             <p>
-              <div class="section takeaway">
-                <strong>If I only take one thing away...</strong>
-              </div>
-              <div class="body padding"><%= article.takeaway_with_links.html_safe %>
-              </div>
-            </p>
-            <div class="expand">
-              <p>
-                <div class="section">
-                  <strong>Hmm, go on...</strong>
+              <div class="section">
+                <div class="click">
+                  [click to expand]</div>
+                  <div class="time"><%= article.created_at.strftime("%B %d, %Y") %></div>
+                  <div class="time-right"><%= article.created_at.strftime("%B %d, %Y") %></div>
+                  <div class="expand">
+                    <strong>What's your point?</strong>
+                  </div>
                 </div>
-                <div class="body padding"><%= article.body_with_links.html_safe %> &#9632;</div>
+                <div class="title">
+                  <%= article.title %>
+                </div>
               </p>
-            </div>
+              <p>
+                <div class="section takeaway">
+                  <strong>If I only take one thing away...</strong>
+                </div>
+                <div class="body padding"><%= article.takeaway_with_links.html_safe %>
+                </div>
+              </p>
+              <div class="expand">
+                <p>
+                  <div class="section">
+                    <strong>Hmm, go on...</strong>
+                  </div>
+                  <div class="body padding"><%= article.body_with_links.html_safe %> &#9632;</div>
+                </p>
+              </div>
               <div class="tag-picture">
                 <% article.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %>
               </div>
+            </div>
+
           </div>
 
         </div>
 
-      </div>
-
-      <% end %>
+        <% end %>
 
 
 
@@ -236,25 +236,25 @@
 
 
 
-      <div class="more-opinion"><a href="/articles/">more opinion > </a></div><br><br>
+        <div class="more-opinion"><a href="/articles/">more opinion > </a></div><br><br>
 
 
-      <!-- <div class="tags">[ on inTED.tv ]</div>
+        <div class="video-tags">[ on inTED.tv ]</div>
 
-      <div class="videos"><iframe width="640" height="360" src="https://www.youtube.com/embed/Qg0pO9VG1J8" frameborder="0" allowfullscreen></iframe> -->
-
-
+        <div class="videos"><iframe width="560" height="315" src="https://www.youtube.com/embed/O3iBb1gvehI" frameborder="0" allowfullscreen></iframe>
 
 
-      <% if current_user %>
+
+
+        <% if current_user %>
+        <div class="admin">
+          <%= link_to 'signout', destroy_user_session_path, :method => :delete %>
+        </div>
+        <% else %>
+        <!-- <div class="admin">
+        <%= link_to 'Signup', new_user_registration_path %>
+      </div> -->
       <div class="admin">
-        <%= link_to 'signout', destroy_user_session_path, :method => :delete %>
+        <%= link_to 'admin', new_user_session_path %>
       </div>
-      <% else %>
-      <!-- <div class="admin">
-      <%= link_to 'Signup', new_user_registration_path %>
-    </div> -->
-    <div class="admin">
-      <%= link_to 'admin', new_user_session_path %>
-    </div>
-    <% end %>
+      <% end %>
