@@ -79,35 +79,6 @@
 </div>
 
 <% end %><br><br> -->
-<br><br>
-
-<div class="article-story" id="featured">
-<p>
-<div class="section">
-  </div>
-  <div class="from takeaway" id="featured-story-source">
-    <strong>~ featured story from</strong> <span class="story-source" "><a href="<%= @featured.link %>" target="_blank"><%= @featured.source %>&nbsp</a></span><strong> ~</strong></div>
-  <div class="story-headline" id="featured-story-headline">
-    <%= @featured.title %>
-  </div>
-  </p>
-  <p>
-      <div class="body padding"><%= @featured.excerpt %>
-    </div>
-  </p>
-  <div class="expand">
-    <p>
-      <div class="all-tags">
-        <% @featured.tags.each do |tag| %><span class="tag"> [ <%= link_to tag.name, tag %> ] </span> &nbsp &nbsp<% end %>
-      </div>
-    </p>
-    </div>
-    <div class="tag-picture" id="featured-tag-picture">
-      <% @featured.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %>
-    </div>
-
-
-</div>
 
 
 
@@ -117,7 +88,7 @@
 
 
 
-    <span class="tags">[ latest news ]</span>
+
 
 
 
@@ -162,13 +133,47 @@
     <% end %>
 
 
+
+  <br>
+
+    <div class="article-story" id="featured">
+    <p>
+    <div class="section">
+      </div>
+      <div class="from takeaway" id="featured-story-source">
+        <strong>~ featured story from</strong> <span class="story-source" "><a href="<%= @featured.link %>" target="_blank"><%= @featured.source %>&nbsp</a></span><strong> ~</strong></div>
+      <div class="story-headline" id="featured-story-headline">
+        <%= @featured.title %>
+      </div>
+      </p>
+      <p>
+          <div class="body padding"><%= @featured.excerpt %>
+        </div>
+      </p>
+      <div class="expand">
+        <p>
+          <div class="all-tags">
+            <% @featured.tags.each do |tag| %><span class="tag"> [ <%= link_to tag.name, tag %> ] </span> &nbsp &nbsp<% end %>
+          </div>
+        </p>
+        </div>
+        <div class="tag-picture" id="featured-tag-picture">
+          <% @featured.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %>
+        </div>
+
+
+    </div>
+
+
 <br><br>
 
 
 
 
 
-    <div class="more-news"><a href="/stories/">more news > </a></div><br><br>
+
+
+    <div class="more-news"><a href="/stories/">more news > </a></div><br>
 
 
 
