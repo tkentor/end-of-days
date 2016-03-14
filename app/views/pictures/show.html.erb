@@ -35,7 +35,7 @@
           <div class="section takeaway">
             <strong>If I only take one thing away...</strong>
           </div>
-          <div class="body padding"><%= article.takeaway_with_links.html_safe %>
+          <div class="body padding"><%= article.takeaway %>
           </div>
         </p>
         <div class="expand">
@@ -43,7 +43,7 @@
             <div class="section">
               <strong>Hmm, go on...</strong>
             </div>
-            <div class="body padding"><%= article.body_with_links.html_safe %> &#9632;</div>
+            <div class="body padding"><%= article.body %> &#9632;</div>
           </p>
         </div>
           <div class="tag-picture">
@@ -76,7 +76,7 @@
           <div class="section">
             <strong>Just give me an excerpt.</strong>
           </div>
-          <div class="body padding"><%= story.excerpt_with_links.html_safe %>
+          <div class="body padding"><%= story.excerpt %>
           </div>
         </div>
       </p>
