@@ -60,7 +60,8 @@ $links: #7171C6;
   // font-family: $baseFont;
   margin: 0 7% 10% 7%;
   // cursor: pointer;
-  border-left: 5px solid $links;
+  border-right: 5px solid black;
+  border-left: none;
 }
 
 #featured-tag-picture img{
