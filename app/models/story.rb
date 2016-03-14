@@ -73,10 +73,9 @@ class Story < ActiveRecord::Base
       end
       if content[i+1] == "}" && content[i+2] == "}"
         recording = false
-        link_array = link.split(",,")
+        note = link
         link = ""
-        note = link_array[0]
-        content_array << "<span class='notes'>#{url}note</span>"
+        content_array << "<span class='notes'>#{note}</span>"
         link_end_index = i+3
       end
     end
