@@ -4,10 +4,11 @@
 
 $baseFont: "Quicksand";
 $selectFont: "Special Elite";
-$blue: #7171C6;
+$notes: #CD3700;
+$links: #7171C6;
 
 .story-time{
-  color: #CD3700;
+  color: $notes;
   text-align: right;
 }
 
@@ -18,7 +19,7 @@ $blue: #7171C6;
 
 .story-source a{
   font-style: italic;
-  background: #7171C6;
+  background: $links;
   text-decoration: none;
   color: white;
   box-shadow: 2px 2px 1px #888888;
@@ -35,4 +36,16 @@ $blue: #7171C6;
   margin: 2% 7% 10% 7%;
   cursor: pointer;
   border-left: 5px solid black;
+}
+
+.notes{
+  font-size: 1vw;
+  position: relative;
+  bottom: .5vw;
+  padding: 0 .2vw;
+  text-decoration: none;
+  color: $notes;
+  box-shadow: 1px 1px 1px gray;
+  background: #FFD700;
+  font-family: "Walter Turncoat"
 }

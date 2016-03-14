@@ -12,46 +12,48 @@
 
 
 
-<% @articles.each do |article| %>
-<div class="article-container">
-<div class="article" id="<%= "article#{article.id}" %>">
-  <p>
-    <div class="section">
-      <div class="click">
-        [click to expand]</div>
-        <div class="time"><%= article.created_at.strftime("%B %d, %Y") %></div>
-        <div class="time-right"><%= article.created_at.strftime("%B %d, %Y") %></div>
-      <div class="expand">
-        <strong>What's your point?</strong>
-      </div>
-    </div>
-      <div class="title">
-        <%= article.title %>
-      </div>
-    </p>
-    <p>
-      <div class="section takeaway">
-        <strong>If I only take one thing away...</strong>
-      </div>
-      <div class="body padding"><%= article.takeaway_with_links.html_safe %>
-      </div>
-    </p>
-    <div class="expand">
+<div class="row">
+
+  <% @articles.each do |article| %>
+  <div id="<%= "article#{article.id}" %>">
+    <div class="article" id="<%= "article#{article.id}" %>">
       <p>
         <div class="section">
-          <strong>Hmm, go on...</strong>
+          <div class="click">
+            [click to expand]</div>
+            <div class="time"><%= article.created_at.strftime("%B %d, %Y") %></div>
+            <div class="time-right"><%= article.created_at.strftime("%B %d, %Y") %></div>
+            <div class="expand">
+              <strong>What's your point?</strong>
+            </div>
+          </div>
+          <div class="title">
+            <%= article.title %>
+          </div>
+        </p>
+        <p>
+          <div class="section takeaway">
+            <strong>If I only take one thing away...</strong>
+          </div>
+          <div class="body padding"><%= article.takeaway_with_links.html_safe %>
+          </div>
+        </p>
+        <div class="expand">
+          <p>
+            <div class="section">
+              <strong>Hmm, go on...</strong>
+            </div>
+            <div class="body padding"><%= article.body_with_links.html_safe %> &#9632;</div>
+          </p>
         </div>
-        <div class="body padding"><%= article.body_with_links.html_safe %> &#9632;</div>
-      </p>
-    </div>
-        <div class="tag-picture">
-          <% article.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %>
-        </div>
+          <div class="tag-picture">
+            <% article.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %>
+          </div>
+      </div>
+
     </div>
 
   </div>
-
-</div>
 
 
 <% @stories.each do |story| %>
@@ -74,7 +76,7 @@
           <div class="section">
             <strong>Just give me an excerpt.</strong>
           </div>
-          <div class="body padding"><%= story.excerpt %>
+          <div class="body padding"><%= story.excerpt.html_safe %>
           </div>
         </div>
       </p>

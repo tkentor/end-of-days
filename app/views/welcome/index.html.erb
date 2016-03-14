@@ -91,7 +91,7 @@
     <div class="section">
       <div class="click">
         [click to expand]</div>
-        <div class="time"><%= story.created_at.strftime("%B %d, %Y") %></div>
+        <div class="time"><%= story.created_at.strftime("%B %d, %Y") %></div><br><br>
       </div>
       <div class="story-headline">
         <%= story.title %>
@@ -104,7 +104,7 @@
           <div class="section">
             <strong>Just give me an excerpt.</strong>
           </div>
-          <div class="body padding"><%= story.excerpt %>
+          <div class="body padding"><%= story.excerpt.html_safe %>
           </div>
         </div>
       </p>
@@ -137,9 +137,8 @@
     <div class="row">
 
       <% @articles.each do |article| %>
-      <div class="article-container">
-        <div class="article-image"><div id="<%= "article#{article.id}" %>"><%= image_tag("#{article.hero}") %></div></div>
-        <div class="article behind-image" id="<%= "article#{article.id}" %>">
+      <div id="<%= "article#{article.id}" %>">
+        <div class="article" id="<%= "article#{article.id}" %>">
           <p>
             <div class="section">
               <div class="click">

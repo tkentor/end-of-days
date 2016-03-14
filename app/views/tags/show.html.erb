@@ -8,7 +8,7 @@
       <div class="section">
         <div class="click">
           [click to expand]</div>
-          <div class="time"><%= story.created_at.strftime("%B %d, %Y") %>
+          <div class="time"><%= story.created_at.strftime("%B %d, %Y") %><br><br>
           </div>
         </div>
         <div class="story-headline">
@@ -22,7 +22,7 @@
             <div class="section">
               <strong>Just give me an excerpt.</strong>
             </div>
-            <div class="body padding"><%= story.excerpt %>
+            <div class="body padding"><%= story.excerpt.html_safe %>
             </div>
           </div>
         </p>

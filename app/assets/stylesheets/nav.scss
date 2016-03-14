@@ -1,5 +1,7 @@
 $baseFont: "Quicksand";
 $selectFont: "Special Elite";
+$notes: #CD3700;
+$links: #7171C6;
 
 .navbar {
   position: fixed;
@@ -37,14 +39,14 @@ $selectFont: "Special Elite";
 }
 
 .dropdown-content a:hover {
-  background-color: #CD3700;
+  background-color: $notes;
   color: white;
-  // background-color: #7171C6;
+  // background-color: $links;
   border: 5px solid black;
 }
 
 .dropdown-blue a:hover {
-  background-color: #7171C6;
+  background-color: $links;
 }
 
 .dropdown:hover .dropdown-content {

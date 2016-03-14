@@ -8,9 +8,8 @@
 <div class="row">
 
   <% @articles.each do |article| %>
-  <div class="article-container">
-    <div class="article-image"><div id="<%= "article#{article.id}" %>"><%= image_tag("#{article.hero}") %></div></div>
-    <div class="article behind-image" id="<%= "article#{article.id}" %>">
+  <div id="<%= "article#{article.id}" %>">
+    <div class="article" id="<%= "article#{article.id}" %>">
       <p>
         <div class="section">
           <div class="click">
@@ -47,6 +46,8 @@
 
     </div>
 
+
+
     <div class="admin">
       <%= link_to 'edit', edit_article_path(article) %> |
     </div>
@@ -56,6 +57,7 @@
       data: { confirm: 'Are you sure?' } %>
     </div>
 
+  </div>
 
 <% end %>
   </div>

@@ -1,5 +1,7 @@
 $baseFont: "Quicksand";
 $selectFont: "Special Elite";
+$notes: #CD3700;
+$links: #7171C6;
 
 body {
   // background: url(http://i.imgur.com/lDznMxt.png) no-repeat center center fixed;
@@ -90,7 +92,7 @@ body {
 .contact a{
   font-weight: bold;
   text-decoration: none;
-  color: #CD3700;
+  color: $notes;
 }
 
 .a-blog{
@@ -114,7 +116,7 @@ body {
   float: right;
   font-size: 1.2rem;
   text-decoration: none;
-  color: #7171C6;
+  color: $links;
   font-family: $selectFont;
 }
 
@@ -150,7 +152,7 @@ body {
 .more-news a{
   font-style: italic;
   text-align: center;
-  background: #CD3700;
+  background: $notes;
   color: white;
   box-shadow: 2px 2px 1px #888888;
   margin-left: 50%;
@@ -164,7 +166,7 @@ body {
 .more-opinion a{
   font-style: italic;
   text-align: center;
-  background: #CD3700;
+  background: $notes;
   color: white;
   box-shadow: 2px 2px 1px #888888;
   margin-left: 50%;

@@ -16,9 +16,10 @@
 
 $(document).ready(function(){
 
-  $(this).find(".time-right").hide();
+  $(".article-story").find(".time-right").hide();
+  $(".article").find(".time-right").hide();
 
-  $(".behind-image").hide();
+  // $(".behind-image").hide();
 
   $(".article").click(function(){
     $(this).find(".expand").show();
@@ -28,15 +29,17 @@ $(document).ready(function(){
     $(this).find(".click").hide();
   })
 
-  $(".article-container").click(function(){
-    $(this).find(".article-image").hide();
-    $(this).find(".article").show();
-  });
+  // $(".article-container").click(function(){
+  //   $(this).find(".article-image").hide();
+  //   $(this).find(".article").show();
+  // });
+
+
 
   $(".article-story").click(function(){
-    $(this).find(".expand").toggle();
-    $(this).find(".click").toggle();
-    $(this).find(".time").toggleClass("time-right");
+    $(this).find(".expand").show();
+    $(this).find(".click").hide();
+    $(this).find(".time").css("float", "right");
   })
 
   $("img[src='']").remove();
