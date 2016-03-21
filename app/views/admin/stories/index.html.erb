@@ -36,9 +36,20 @@
 
 
 
-
+        <div class="admin">
+          <%= link_to 'edit', edit_admin_story_path(story) %> |
+        </div>
+        <div class="admin">
+          <%= link_to 'delete', admin_story_path(story),
+          method: :delete,
+          data: { confirm: 'Are you sure?' } %>
+        </div>
       </div>
 
 
       </div>
       <% end %>
+
+<div class="admin">
+  <%= link_to 'new', new_admin_story_path %>
+</div>

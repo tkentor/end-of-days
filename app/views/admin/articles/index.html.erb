@@ -1,6 +1,6 @@
 <div class="tags">[ original content ]</div>
 
-
+<div class="admin"><%= link_to 'new', new_admin_article_path %></div>
 <!-- <div class="dice"><img src="http://i.imgur.com/MJWQQz8.png" id="dice-pic"></div> -->
 <!-- <div class="quote"></div> -->
 
@@ -48,7 +48,14 @@
 
 
 
-
+    <div class="admin">
+      <%= link_to 'edit', edit_admin_article_path(article) %> |
+    </div>
+    <div class="admin">
+      <%= link_to 'delete', admin_article_path(article),
+      method: :delete,
+      data: { confirm: 'Are you sure?' } %>
+    </div>
 
   </div>
 

@@ -116,7 +116,7 @@ $links: #7171C6;
 
 
 .admin a{
-  color: rgba(white,.1);
+  color: black;
   float: right;
   font-family: $baseFont;
 }
@@ -142,12 +142,11 @@ $links: #7171C6;
   color: rgb(104,104,104);
 }
 
-.dice img{
-  width: 1.8vw;
-  float: left;
-  padding-right: .5%;
-  margin-left: 45%;
-  cursor: pointer;
+.dice{
+z-index: -1;
+position: relative;
+width: 50%;
+margin: 25%;
 }
 
 .blog-links a{

@@ -1,4 +1,4 @@
-<%= form_for @article do |f| %>
+<%= form_for [:admin, @article] do |f| %>
 
 <% if @article.errors.any? %>
 <div id="error_explanation">
@@ -64,7 +64,7 @@
           http://i.imgur.com/iJ6pRJR.png'],['dishonest','
           http://i.imgur.com/p2FSYaq.png'],['divisive','
           http://i.imgur.com/FiP6H6p.png'],['out of touch','
-          http://i.imgur.com/XvU5GO3.png'],['inflammatory','http://i.imgur.com/e4HfA3X.png'],['good reporting','
+          http://i.imgur.com/XvU5GO3.png'],['inflammatory','http://i.imgur.com/e4HfA3X.png'],['obstructionism','http://i.imgur.com/D5gSSQV.png'],['good reporting','
           http://i.imgur.com/XcMoxpj.png'],['good for america','
           http://i.imgur.com/6HhfWdw.png']],{:prompt => "Please
           select"},{ :multiple => true } %>

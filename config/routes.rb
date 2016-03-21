@@ -1,14 +1,17 @@
 Rails.application.routes.draw do
   get 'welcome/index'
-  resources :articles
-  resources :stories
-  resources :tags, only: [:show]
-  resources :pictures, only: [:show]
+  resources :articles, only: :index
+  resources :stories, only: :index
+  resources :tags, only: :show
+  resources :pictures, only: :show
   devise_for :users
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-
+  namespace :admin do
+    resources :articles
+    resources :stories
+  end
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
@@ -16,6 +19,8 @@ Rails.application.routes.draw do
   get '/ratings', to: 'welcome#ratings'
   get '/show', to: 'welcome#show'
   get '/policy', to: 'welcome#policy'
+
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
