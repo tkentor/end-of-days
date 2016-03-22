@@ -1,4 +1,15 @@
-<div class="tags">[ <%= @tag.name %> ]</div>
+<div class="row">
+  <div class="col-12">
+<div class="tags">[ <%= @tag.name %> ]</div></div>
+  <div class="col-11">
+<%= form_tag stories_path, :method => 'get' do %>
+    <%= submit_tag "search", :name => nil, :class => "search-button" %>
+    <%= text_field_tag :search, params[:search], :class => "search", :placeholder => " search news"  %>
+
+<% end %>
+</div>
+</div>
+</div>
 
 
 
