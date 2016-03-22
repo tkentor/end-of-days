@@ -12,7 +12,7 @@ $links: #7171C6;
   background-color: black;
   color: white;
   font-family: $selectFont;
-  padding: 20px;
+  padding: 25px 20px 10px 20px;
   opacity: .9;
   text-align: center;
 }
@@ -59,6 +59,25 @@ $links: #7171C6;
 
 .navbar-about{
 }
+
+.nav-search-button{
+  width: 18px;
+  margin-left: 3%;
+}
+
+.nav-search-field{
+  width: 10vw;
+  border-radius: 15px;
+  border: 3px solid white;
+  background-color: black;
+  font-family: $baseFont;
+  height: 200%;
+  color: white;
+  padding: 2%;
+  position: relative;
+  bottom: .6vw;
+}
+
 //
 @media (max-width: 700px){
   .navbar-left a{

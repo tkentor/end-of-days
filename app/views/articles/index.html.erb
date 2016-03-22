@@ -1,15 +1,23 @@
-<div class="tags">[ original content ]</div>
-
-
+<div class="row">
+  <div class="col-12">
+<div class="tags">[ original content ]</div></div>
+  <div class="col-11">
 <%= form_tag articles_path, :method => 'get' do %>
-  <p>
-    <%= text_field_tag :search, params[:search] %>
-    <%= submit_tag "Search", :name => nil %>
-  </p>
+    <%= submit_tag "search", :name => nil, :class => "search-button" %>
+    <%= text_field_tag :search, params[:search], :class => "search", :placeholder => " search blog posts"  %>
+
 <% end %>
+</div>
+</div>
+</div>
 
 <!-- <div class="dice"><img src="http://i.imgur.com/MJWQQz8.png" id="dice-pic"></div> -->
 <!-- <div class="quote"></div> -->
+
+
+
+
+</div>
 
 
 <div class="row">

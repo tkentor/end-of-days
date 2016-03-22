@@ -124,10 +124,10 @@ body {
 }
 
 .tags{
-  text-align: left;
   font-family: $selectFont;
   font-size: 4vw;
-  margin: 5% 7%;
+  float: left;
+  margin: 4% 0 5% 14%;
 }
 
 .video-tags{
