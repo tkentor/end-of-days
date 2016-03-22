@@ -83,4 +83,9 @@ class Story < ActiveRecord::Base
     return content_array.join
   end
 
+  def null(param = nil)
+  end
+
+  alias_method :text_with_links, :null
+
 end

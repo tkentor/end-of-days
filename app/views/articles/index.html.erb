@@ -1,6 +1,13 @@
 <div class="tags">[ original content ]</div>
 
 
+<%= form_tag articles_path, :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>
+
 <!-- <div class="dice"><img src="http://i.imgur.com/MJWQQz8.png" id="dice-pic"></div> -->
 <!-- <div class="quote"></div> -->
 
@@ -28,7 +35,7 @@
           <div class="section takeaway">
             <strong>If I only take one thing away...</strong>
           </div>
-          <div class="body padding"><%= article.takeaway_with_links.html_safe %>
+          <div class="body padding"><%= article.text_with_links(article.takeaway).html_safe %>
           </div>
         </p>
         <div class="expand">
@@ -36,7 +43,7 @@
             <div class="section">
               <strong>Hmm, go on...</strong>
             </div>
-            <div class="body padding"><%= article.body_with_links.html_safe %> &#9632;</div>
+            <div class="body padding"><%= article.text_with_links(article.body).html_safe %> &#9632;</div>
           </p>
         </div>
           <div class="tag-picture">
