@@ -6,8 +6,9 @@ class Story < ActiveRecord::Base
   has_many :depictions, :dependent => :delete_all
   has_many :pictures, through: :depictions, :dependent => :delete_all
 
-  def self.search(query)
-    Story.where("title LIKE ?", "%#{query}%")
+
+  def self.search(search)
+    where("title LIKE ?", "%#{search}%") 
   end
 
   def self.tagged_with(name)
