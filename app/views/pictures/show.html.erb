@@ -21,7 +21,7 @@
 
 
 
-  <!-- <% @articles.each do |article| %>
+  <% @articles.each do |article| %>
   <div id="<%= "article#{article.id}" %>">
     <div class="article" id="<%= "article#{article.id}" %>">
       <p>
@@ -61,26 +61,23 @@
     </div>
 
   </div>
-  <% end %> -->
+  <% end %>
 
 
-<% @pieces.each do |story| %>
-<div class="article-story" id="<%= "story#{story.id}" %>">
-  <p>
-    <div class="section">
-      <div class="click">
-        [click to expand]</div>
-        <div class="time"><%= story.created_at.strftime("%B %d, %Y") %>
+  <% @stories.each do |story| %>
+  <div class="article-story" >
+    <p>
+      <div class="section">
+        <div class="click">
+          [click to expand]
         </div>
+        <div class="time"><%= story.created_at.strftime("%B %d, %Y") %></div>
       </div>
       <div class="story-headline">
         <%= story.title %>
       </div>
-      <% if story.source && story.link %>
       <div class="from takeaway">
-        <strong>from</strong> <span class="story-source"><a href="<%= story.link %>" target="_blank"><%= story.source %>&nbsp</a></span>
-      </div>
-      <% end %>
+        <strong>from</strong> <span class="story-source"><a href="<%= story.link %>" target="_blank"><%= story.source %>&nbsp</a></span></div>
       </p>
       <p>
         <div class="expand">
@@ -92,20 +89,17 @@
         </div>
       </p>
       <div class="expand">
-    <p>
-    <div class="all-tags">
-      <% story.tags.each do |tag| %><span class="tag"> [ <%= link_to tag.name, tag %> ] </span> &nbsp &nbsp<% end %>
+        <p>
+          <div class="all-tags">
+            <% story.tags.each do |tag| %><span class="tag"> [ <%= link_to tag.name, tag %> ] </span> &nbsp &nbsp<% end %>
+          </div>
+        </p>
+      </div>
+      <div class="tag-picture">
+        <% story.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %>
+      </div>
+
+
     </div>
-  </div>
-  <div class="tag-picture">
-    <% story.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %>
-  </div>
-</p>
 
-
-</div>
-
-
-  <% end %>
-
-</div>
+    <% end %>

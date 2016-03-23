@@ -1,0 +1,104 @@
+<% @pieces.each do |story| %>
+<div class="article-story" id="<%= "story#{story.id}" %>">
+  <p>
+    <div class="section">
+      <div class="click">
+        [click to expand]</div>
+        <div class="time"><%= story.created_at.strftime("%B %d, %Y") %>
+        </div>
+      </div>
+      <div class="story-headline">
+        <%= story.title %>
+      </div>
+      <% if story.source && story.link %>
+      <div class="from takeaway">
+        <strong>from</strong> <span class="story-source"><a href="<%= story.link %>" target="_blank"><%= story.source %>&nbsp</a></span>
+      </div>
+      <% end %>
+      </p>
+      <p>
+        <div class="expand">
+          <div class="section">
+            <strong>Just give me an excerpt.</strong>
+          </div>
+          <div class="body padding"><%= story.excerpt %>
+          </div>
+        </div>
+      </p>
+      <div class="expand">
+    <p>
+    <div class="all-tags">
+      <% story.tags.each do |tag| %><span class="tag"> [ <%= link_to tag.name, tag %> ] </span> &nbsp &nbsp<% end %>
+    </div>
+  </div>
+  <div class="tag-picture">
+    <% story.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %>
+  </div>
+</p>
+
+
+</div>
+
+
+  <% end %>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<% @articles.each do |article| %>
+<div id="<%= "article#{article.id}" %>">
+  <div class="article" id="<%= "article#{article.id}" %>">
+    <p>
+      <div class="section">
+        <div class="click">
+          [click to expand]</div>
+          <div class="time"><%= article.created_at.strftime("%B %d, %Y") %></div>
+          <div class="time-right"><%= article.created_at.strftime("%B %d, %Y") %></div>
+          <div class="expand">
+            <strong>What's your point?</strong>
+          </div>
+        </div>
+        <div class="title">
+          <%= article.title %>
+        </div>
+      </p>
+      <p>
+        <div class="section takeaway">
+          <strong>If I only take one thing away...</strong>
+        </div>
+        <div class="body padding"><%= article.text_with_links(article.takeaway).html_safe %>
+        </div>
+      </p>
+      <div class="expand">
+        <p>
+          <div class="section">
+            <strong>Hmm, go on...</strong>
+          </div>
+          <div class="body padding"><%= article.text_with_links(article.body).html_safe %> &#9632;</div>
+        </p>
+      </div>
+        <div class="tag-picture">
+          <% article.pictures.each do |picture| %><%= link_to image_tag("#{picture.link}"), picture %><% end %>
+        </div>
+    </div>
+
+  </div>
+
+
+
+
+
+</div>
+
+<% end %>
