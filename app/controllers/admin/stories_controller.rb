@@ -42,7 +42,7 @@ class Admin::StoriesController < ApplicationController
     @story = Story.find(params[:id])
     @story.destroy
 
-    redirect_to stories_path
+    redirect_to admin_stories_path
   end
 
   private
